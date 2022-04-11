@@ -400,7 +400,6 @@ function stopGameHide() {
   document.getElementById("countArea").classList.add("hidden");
   document.getElementById("endBtn").classList.add("hidden");
   document.getElementById("replay").classList.remove("hidden");
-  document.getElementById("prevScores").classList.add("hidden");
 }
 //buttons
 function lightButton(btn) {
