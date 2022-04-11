@@ -32,7 +32,7 @@ a:active {
   position: fixed;
   top: 2;
   left: 3;
-  font-family: "Brush Script MT", cursive;
+  font-family: "Sigmar One", sans-serif;
   font-size: 20px;
 }
 a:hover {
@@ -53,8 +53,8 @@ h1 {
 }
 #demoFrame {
   background-image: url("https://cdn.glitch.global/2718326c-3a19-428c-be02-60b78405419a/catt.PNG?v=1649376567588");
-  height: 350px;
-  width: 460px;
+  height: 360px;
+  width: 470px;
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: center;
@@ -62,7 +62,7 @@ h1 {
 #gameMenu {
   background-color: salmon;
   background-image: url("https://cdn.glitch.global/2718326c-3a19-428c-be02-60b78405419a/bggg-removebg-preview.png?v=1649498293672");
-  height: 450px;
+  height: 440px;
   width: 290px;
   background-size: 115%;
   background-repeat: no-repeat;
@@ -140,12 +140,13 @@ h1 {
 }
 
 #easy {
+  font-family: "Sigmar One", sans-serif;
   border: 2px solid black;
   background-color: forestgreen;
   color: black;
-  border-color: green;
+  border-color: black;
   color: black;
-  padding: 14px 24px;
+  padding: 9px 20px;
   font-size: 16px;
   cursor: pointer;
   font-weight: bold;
@@ -154,16 +155,17 @@ h1 {
   background-color: green;
   border-color: black;
   color: white;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: normal;
 }
 
 #med {
+  font-family: "Sigmar One", sans-serif;
   border: 2px solid black;
   background-color: yellow;
   color: black;
-  border-color: gold;
-  padding: 14px 24px;
+  border-color: black;
+  padding: 9px 20px;
   font-size: 16px;
   cursor: pointer;
   font-weight: bold;
@@ -172,16 +174,17 @@ h1 {
   background-color: gold;
   border-color: black;
   color: white;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: normal;
 }
 
 #hard {
+  font-family: "Sigmar One", sans-serif;
   border: 2px solid black;
   background-color: red;
   color: black;
-  border-color: crimson;
-  padding: 14px 24px;
+  border-color: black;
+  padding: 9px 20px;
   font-size: 16px;
   font-weight: bold;
 }
@@ -189,15 +192,16 @@ h1 {
   background-color: crimson;
   border-color: black;
   color: white;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: normal;
 }
 #speed {
+  font-family: "Sigmar One", sans-serif;
   border: 2px solid black;
   background-color: purple;
   color: black;
-  border-color: rebeccapurple;
-  padding: 14px 24px;
+  border-color: black;
+  padding: 9px 20px;
   font-size: 16px;
   font-weight: bold;
 }
@@ -205,7 +209,7 @@ h1 {
   background-color: rebeccapurple;
   border-color: black;
   color: white;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: normal;
 }
 
@@ -247,12 +251,17 @@ h1 {
   background-size: 99%;
   background-repeat: no-repeat;
   background-position: center;
+  transform-style: preserve-3d;
 }
-#btn1:hover,
 #btn1.lit {
   background: slategray;
 }
+#btn1:hover{
+  opacity: 60%;
+}
 #btn1:active {
+  opacity:100%;
+  transition:opacity .5s;
   background-image: url(https://cdn.glitch.global/2718326c-3a19-428c-be02-60b78405419a/c1.jpg?v=1649668419447);
   background-size: 100%;
   background-repeat: no-repeat;
@@ -264,11 +273,15 @@ h1 {
   background-repeat: no-repeat;
   background-position: center;
 }
-#btn2:hover,
 #btn2.lit {
   background: green;
 }
+#btn2:hover{
+  opacity: 60%;
+}
 #btn2:active {
+  opacity:100%;
+  transition:opacity .5s;
   background-image: url(https://cdn.glitch.global/2718326c-3a19-428c-be02-60b78405419a/c2.jpg?v=1649668311089);
   background-size: 98%;
   background-repeat: no-repeat;
@@ -280,11 +293,15 @@ h1 {
   background-repeat: no-repeat;
   background-position: center;
 }
-#btn3:hover,
 #btn3.lit {
   background: red;
 }
+#btn3:hover{
+  opacity: 60%;
+}
 #btn3:active {
+  opacity:100%;
+  transition:opacity .5s;
   background-image: url(https://cdn.glitch.global/2718326c-3a19-428c-be02-60b78405419a/c3.jpg?v=1649668311274);
   background-size: 100%;
   background-repeat: no-repeat;
@@ -297,11 +314,15 @@ h1 {
   background-position: center;
 }
 
-#btn4:hover,
 #btn4.lit {
   background: blue;
 }
+#btn4:hover{
+  opacity: 60%;
+}
 #btn4:active {
+  opacity:100%;
+  transition:opacity .5s;
   background-image: url(https://cdn.glitch.global/2718326c-3a19-428c-be02-60b78405419a/c4.jpg?v=1649668311108);
   background-size: 100%;
   background-repeat: no-repeat;
@@ -313,11 +334,15 @@ h1 {
   background-repeat: no-repeat;
   background-position: center;
 }
-#btn5:hover,
 #btn5.lit {
   background: purple;
 }
+#btn5:hover{
+  opacity: 60%;
+}
 #btn5:active {
+  opacity:100%;
+  transition:opacity .5s;
   background-image: url(https://cdn.glitch.global/2718326c-3a19-428c-be02-60b78405419a/unnamed.jpg?v=1649669141226);
   background-size: 98%;
   background-repeat: no-repeat;
@@ -329,11 +354,15 @@ h1 {
   background-repeat: no-repeat;
   background-position: center;
 }
-#btn6:hover,
 #btn6.lit {
   background: orangered;
 }
+#btn6:hover{
+  opacity: 60%;
+}
 #btn6:active {
+  opacity:100%;
+  transition:opacity .5s;
   background-image: url(https://cdn.glitch.global/2718326c-3a19-428c-be02-60b78405419a/c6.jpg?v=1649668311216);
   background-size: 98%;
   background-repeat: no-repeat;
@@ -345,27 +374,35 @@ h1 {
   background-repeat: no-repeat;
   background-position: center;
 }
-#btn7:hover,
 #btn7.lit {
   background: yellow;
 }
+#btn7:hover{
+  opacity: 60%;
+}
 #btn7:active {
+  opacity:100%;
+  transition:opacity .5s;
   background-image: url(https://cdn.glitch.global/2718326c-3a19-428c-be02-60b78405419a/c7.jpg?v=1649668310905);
   background-size: 98%;
   background-repeat: no-repeat;
   background-position: center;
 }
 #btn8 {
-  background-image: url(https://cdn.glitch.global/2718326c-3a19-428c-be02-60b78405419a/yello2.png?v=1649675338340);
+  background-image: url(https://cdn.glitch.global/2718326c-3a19-428c-be02-60b78405419a/d66ffd7836903e90c99f04c2ce0e3888.jpg?v=1649675513802);
   background-size: 97%;
   background-repeat: no-repeat;
   background-position: center;
 }
-#btn8:hover,
 #btn8.lit {
   background: pink;
 }
+#btn8:hover{
+  opacity: 60%;
+}
 #btn8:active {
+  opacity:100%;
+  transition:opacity .5s;
   background-image: url(https://cdn.glitch.global/2718326c-3a19-428c-be02-60b78405419a/c8.jpg?v=1649668310859);
   background-size: 98%;
   background-repeat: no-repeat;
