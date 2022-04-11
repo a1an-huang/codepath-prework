@@ -171,6 +171,9 @@ function stopGame() {
   clueHoldTime = 850;
   stopGameHide();
 }
+/** can implement a leaderboard in the future using this method by sorting the progress 
+    before the for loop and finding a way to get all the scores to show. Getting
+    the scores are already implemented since it is going through all the scores in the list*/
 function showScores() {
   document.getElementById("scoreValues").classList.remove("hidden");
   for (let i = 0; i < allScores.length; i++) {
