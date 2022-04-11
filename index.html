@@ -13,12 +13,18 @@
     <link rel="stylesheet" href="/style.css" />
     <!-- import the webpage's javascript file -->
     <script src="/script.js" defer></script>
-    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Sigmar+One" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//fonts.googleapis.com/css?family=Sigmar+One"
+    />
   </head>
 
   <body>
     <!-- legacy mode -->
-    <a id="legacy" href="legacy.html" style="color:slategray;"><u>legacy mode</u></a>
+    <a id="legacy" href="legacy.html" style="color: slategray"
+      ><u>legacy mode</u></a
+    >
     <!-- this is the start of content -->
     <h1>
       <img
@@ -168,29 +174,25 @@
         <div id="timer" style="display: table-cell">
           &nbsp;&nbsp;
           <img
-            width="20"
-            height="20"
-            src="https://cdn.glitch.global/2718326c-3a19-428c-be02-60b78405419a/0ec734cf5bafedf9b9b0d170bf28898c.png?v=1649478398184"
+            width="13"
+            height="13"
+            src="https://cdn.glitch.global/2718326c-3a19-428c-be02-60b78405419a/hourglass.png?v=1649718780207"
           />Timer: <span id="time"></span>
         </div>
       </div>
 
       <div id="speedTimer" class="hidden">
         <img
-          width="20"
-          height="20"
-          src="https://cdn.glitch.global/2718326c-3a19-428c-be02-60b78405419a/0ec734cf5bafedf9b9b0d170bf28898c.png?v=1649478398184"
+          width="13"
+          height="13"
+          src="https://cdn.glitch.global/2718326c-3a19-428c-be02-60b78405419a/hourglass.png?v=1649718780207"
         />Timer: <span id="sTime"></span>
       </div>
     </center>
     <!-- Result Text -->
     <center>
       <div id="gameRes">
-        <span
-          id="wonGame"
-          class="hidden"
-          style="color: green; 
-                 font-weight: 900"
+        <span id="wonGame" class="hidden" style="color: green; font-weight: 900"
           >Congratulations. You won!</span
         >
         <span id="lostGame" class="hidden" style="color: red; font-weight: 900"
@@ -200,10 +202,7 @@
     </center>
     <!-- Game Buttons -->
     <center>
-      <div
-        id="gameArea"
-        class="hidden"
-      >
+      <div id="gameArea" class="hidden">
         <button
           id="btn1"
           onclick="guess(1)"
@@ -260,21 +259,24 @@
     </center>
     <center>
       <!--menu -->
-      <button id="menu" class="hidden" onclick="chooseDifficulty()" style="font-weight:bold;color:white;">
+      <button
+        id="menu"
+        class="hidden"
+        onclick="chooseDifficulty()"
+        style="font-weight: bold; color: white"
+      >
         Menu
       </button>
       <!-- bottom text -->
-      <p style="position: fixed; bottom: 0; width: 98%;">by Alan Huang</p>
-      <a
-        href="https://github.com/a1an-huang/codepath-prework"
-        target="_blank"
-        style="position: fixed; bottom: 0; left: 0"
-        ><img
-          id="github"
-          width="25"
-          height="25"
-          src="https://cdn.glitch.global/2718326c-3a19-428c-be02-60b78405419a/25231.png?v=1649480413129"
-      /></a>
+      <p style="position: fixed; bottom: 0; right: 0">
+        <a href="https://github.com/a1an-huang/codepath-prework" target="_blank"
+          ><img
+            id="github"
+            width="25"
+            height="25"
+            src="https://cdn.glitch.global/2718326c-3a19-428c-be02-60b78405419a/github-icon-white-6.jpg?v=1649692667112" /></a
+        >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;by Alan Huang&nbsp;&nbsp;
+      </p>
     </center>
   </body>
 </html>
