@@ -349,14 +349,14 @@ function easySetting() {
   document.getElementById("hardDiff").classList.add("hidden");
   document.getElementById("scoreValues").classList.add("hidden");
 
-  document.getElementById("gameArea").style.width = "500px";
+  document.getElementById("gameArea").style.width = "400px";
 }
 function medSetting() {
   document.getElementById("hardDiff").classList.add("hidden");
   document.getElementById("scoreValues").classList.add("hidden");
   document.getElementById("medDiff").classList.remove("hidden");
 
-  document.getElementById("gameArea").style.width = "700px";
+  document.getElementById("gameArea").style.width = "600px";
 }
 function hardSetting() {
   document.getElementById("scoreValues").classList.add("hidden");
@@ -364,7 +364,7 @@ function hardSetting() {
   document.getElementById("hardDiff").classList.remove("hidden");
   document.getElementById("prevScores").classList.remove("hidden");
 
-  document.getElementById("gameArea").style.width = "900px";
+  document.getElementById("gameArea").style.width = "700px";
 }
 function speedControls() {
   document.getElementById("scoreValues").classList.add("hidden");
@@ -374,7 +374,7 @@ function speedControls() {
   document.getElementById("medDiff").classList.remove("hidden");
   document.getElementById("speedTimer").classList.remove("hidden");
 
-  document.getElementById("gameArea").style.width = "700px";
+  document.getElementById("gameArea").style.width = "600px";
 }
 
 function speedGameShow() {
