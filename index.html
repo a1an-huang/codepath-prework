@@ -17,7 +17,7 @@
 
   <body>
     <!-- legacy mode -->
-    <a id="legacy" href="legacy.html"><u>legacy mode</u></a>
+    <a id="legacy" href="legacy.html" style="color:slategray;"><u>legacy mode</u></a>
     <!-- this is the start of content -->
     <h1>
       <img
@@ -117,7 +117,13 @@
         <button id="speed" onclick="speed()">Speed</button>
         <div></div>
         <br />
-        <button id="home" onclick="home()">HomePage</button>
+        <button
+          id="home"
+          onclick="home()"
+          style="color: white; font-weight: bold"
+        >
+          HomePage
+        </button>
         <div></div>
       </div>
     </center>
@@ -182,10 +188,11 @@
         <span
           id="wonGame"
           class="hidden"
-          style="color: green; font-weight: bold"
+          style="color: green; 
+                 font-weight: 900"
           >Congratulations. You won!</span
         >
-        <span id="lostGame" class="hidden" style="color: red; font-weight: bold"
+        <span id="lostGame" class="hidden" style="color: red; font-weight: 900"
           >Game Over. You lost!</span
         >
       </div>
@@ -195,7 +202,6 @@
       <div
         id="gameArea"
         class="hidden"
-        style="background-color: lightslategray"
       >
         <button
           id="btn1"
@@ -253,7 +259,7 @@
     </center>
     <center>
       <!--menu -->
-      <button id="menu" class="hidden" onclick="chooseDifficulty()">
+      <button id="menu" class="hidden" onclick="chooseDifficulty()" style="font-weight:bold;color:white;">
         Menu
       </button>
       <!-- bottom text -->
