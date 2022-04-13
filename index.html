@@ -114,20 +114,22 @@
     <!-- Difficulty Buttons -->
     <div id="diffMenu">
       <div id="gameMenu" class="hidden">
-        <div id="easyBtn">
-          <button id="easy" onclick="easy()">Easy</button>
-        </div>
-        <div id="medBtn">
-          <button id="med" onclick="med()">Medium</button>
-        </div>
-        <div id="hardBtn">
-          <button id="hard" onclick="hard()">Hard</button>
-        </div>
-        <div id="speedBtn">
-          <button id="speed" onclick="speed()">Speed</button>
-        </div>
-        <div id="homeBtn">
-          <button id="home" onclick="home()">HomePage</button>
+        <div id="diffBtns">
+          <div id="easyBtn">
+            <button id="easy" onclick="easy()">Easy</button>
+          </div>
+          <div id="medBtn">
+            <button id="med" onclick="med()">Medium</button>
+          </div>
+          <div id="hardBtn">
+            <button id="hard" onclick="hard()">Hard</button>
+          </div>
+          <div id="speedBtn">
+            <button id="speed" onclick="speed()">Speed</button>
+          </div>
+          <div id="homeBtn">
+            <button id="home" onclick="home()">HomePage</button>
+          </div>
         </div>
       </div>
     </div>
@@ -136,14 +138,12 @@
     <div id="countBar">
       <div id="countArea" class="hidden">
         <div id="gProg">
-          <div id="progFill">
-            <img
-              id="progImg"
-              src="https://cdn.glitch.global/2718326c-3a19-428c-be02-60b78405419a/f72a9dd3-87a6-40fb-89ed-92e7bc6a74ba.image.png?v=1649500623267"
-            />
-            Progress:
-            <span id="progCount">0</span>/<span id="goal"></span>
-          </div>
+          <img
+            id="progImg"
+            src="https://cdn.glitch.global/2718326c-3a19-428c-be02-60b78405419a/f72a9dd3-87a6-40fb-89ed-92e7bc6a74ba.image.png?v=1649500623267"
+          />
+          Progress:
+          <span id="progCount">0</span>/<span id="goal"></span>
         </div>
         <div id="mistakes">
           <img
@@ -153,27 +153,25 @@
             id="totalMis"
           ></span>
         </div>
-      </div>
-
-      <!-- Timers -->
-      <div id="timerBar">
-        <span id="timer" class="hidden">
+        <div id="timer" class="hidden">
           <img
             id="timerImg"
             src="https://cdn.glitch.global/2718326c-3a19-428c-be02-60b78405419a/hourglass.png?v=1649718780207"
           />Timer: <span id="time"></span>
-        </span>
-      </div>
-      <div id="speedTimer" class="hidden">
-        <img
-          id="timerImg2"
-          src="https://cdn.glitch.global/2718326c-3a19-428c-be02-60b78405419a/hourglass.png?v=1649718780207"
-        />Timer: <span id="sTime"></span>
+        </div>
       </div>
     </div>
 
+    <!-- Speed Timer -->
+    <div id="speedTimer" class="hidden">
+      <img
+        id="timerImg2"
+        src="https://cdn.glitch.global/2718326c-3a19-428c-be02-60b78405419a/hourglass.png?v=1649718780207"
+      />Timer: <span id="sTime"></span>
+    </div>
+
     <!-- Result Text -->
-    <div id="ResultText">
+    <div id="resultText">
       <div id="gameRes">
         <span id="wonGame" class="hidden">Congratulations. You won!</span>
         <span id="lostGame" class="hidden">Game Over. You lost!</span>
@@ -246,12 +244,14 @@
     </div>
 
     <!-- Info Text -->
+
     <div id="myInfo">
       <a href="https://github.com/a1an-huang/codepath-prework" target="_blank"
         ><img
           id="githubImg"
-          src="https://cdn.glitch.global/2718326c-3a19-428c-be02-60b78405419a/github-icon-white-6.jpg?v=1649692667112" /></a
-      >by Alan Huang
+          src="https://cdn.glitch.global/2718326c-3a19-428c-be02-60b78405419a/github-icon-white-6.jpg?v=1649692667112"
+      /></a>
+      <div id="infoText">by Alan Huang</div>
     </div>
   </body>
 </html>
