@@ -197,8 +197,14 @@ h1 {
 #prevScores:hover {
   opacity: 75%;
 }
+#scoreBoard{
+  font-family: "Sigmar One", sans-serif;
+  position:fixed;
+  left: 20%;
+  top: 40%;
+}
 #scoreValues {
-  font-size: 12px;
+  font-size: 14px;
 }
 
 /* ---- Difficulty Menu ---- */
@@ -352,6 +358,7 @@ h1 {
 
 /* ---- Count Area ---- */
 #countArea {
+  font-family: "Sigmar One", sans-serif;
   text-align: center;
   align-items: center;
   justify-content: center;
@@ -376,7 +383,9 @@ h1 {
 
 /* ---- Timer ---- */
 #speedTimer {
+  font-family: "Sigmar One", sans-serif;
   margin: 0 auto;
+  
   text-align: center;
 }
 #timerImg {

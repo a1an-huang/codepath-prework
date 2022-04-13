@@ -1,6 +1,8 @@
 /* ---- BY ALAN HUANG ---- */
 
 var allScores = [];
+var totalLoses = 0;
+var totalWins = 0;
 
 /* ---- Home Page ---- */
 function home() {
@@ -118,14 +120,16 @@ function timeCounter() {
 
 /* ---- Game Controls ----*/
 function stopGame() {
-  allScores.push([progress, mistakesMade, timer]);
-  console.log(allScores);
-  clearInterval(timeOut);
   if (progress == pattern.length - 1) {
+    totalWins++;
     document.getElementById("wonGame").classList.remove("hidden");
   } else {
+    totalLoses++;
     document.getElementById("lostGame").classList.remove("hidden");
   }
+  allScores.push([progress, mistakesMade, timer, totalWins, totalLoses]);
+  console.log(allScores);
+  clearInterval(timeOut);
   gamePlaying = false;
   pattern = [];
   progress = 0;
@@ -147,7 +151,7 @@ function prevDiff() {
   }
 }
 function showScores() {
-  //Can use this to implement a scoreboard in the future
+  //Can use this to implement a scoreboard with all values in the future
   document.getElementById("scoreValues").classList.remove("hidden");
   for (let i = 0; i < allScores.length; i++) {
     var scores = allScores[i];
@@ -195,7 +199,7 @@ function playClueSequence() {
     setTimeout(playSingleClue, delay, pattern[i]);
     delay += clueHoldTime;
     delay += cluePauseTime;
-    clueHoldTime -= 25;
+    clueHoldTime -= 50;
   }
 }
 function playSingleClue(btn) {
