@@ -1,43 +1,40 @@
-//Created by Alan Huang
-// variables related to the randomly generated patterns
-var pattern = [];
-var patLength = 5;
-var patSize = 8;
-
-var gamePlaying = false;
-var tonePlaying = false;
-
-// counters
-var mistakes = 3;
-var progress = 0;
-var guessCounter = 0;
-var mistakesMade = 0;
-
-// timer
-var timeOut;
-var timer;
-var counter;
-
-//time for how long the clue holds or pauses
-var clueHoldTime;
-const cluePauseTime = 333;
-var nextClueWaitTime = 1000;
+/* ---- BY ALAN HUANG ---- */
 
 var allScores = [];
 
-//home screen
+/* ---- Home Page ---- */
 function home() {
   homeShow();
   homeHide();
 }
 
-// difficulty
+/* ---- Start ---- */
+var gamePlaying = false;
+var tonePlaying = false;
+
+var mistakes;
+var progress = 0;
+
+var guessCounter = 0;
+var mistakesMade = 0;
+
+function startGame() {
+  mistakesMade = 0;
+  gamePlaying = true;
+  startGameShow();
+  startGameHide();
+  startGameCounters();
+  timeOut = setInterval(timeCounter, 1000);
+  generatePattern();
+  playClueSequence();
+}
+
+/* ---- Difficulty Buttons ---- */
 function chooseDifficulty() {
   stopGame();
   diffHide();
   diffShow();
 }
-//easy - hard diff
 function easy() {
   clueHoldTime = 850;
   patLength = 5;
@@ -69,8 +66,6 @@ function hard() {
   hardSetting();
   startGame();
 }
-
-//speed difficulty
 function speed() {
   clueHoldTime = 800;
   patLength = 6;
@@ -86,12 +81,9 @@ function startSpeedGame() {
   mistakesMade = 0;
   progress = 0;
   gamePlaying = true;
-
   speedGameShow();
   speedGameHide();
-
   document.getElementById("sTime").innerHTML = timer;
-
   timeOut = setInterval(timeCounter, 1000);
   generatePattern();
   speedGame();
@@ -102,17 +94,79 @@ function speedGame() {
   playClueSequence();
 }
 
-//starts Game
-function startGame() {
-  mistakesMade = 0;
-  gamePlaying = true;
-  startGameShow();
-  startGameHide();
-  startGameCounters();
-  timeOut = setInterval(timeCounter, 1000);
-  generatePattern();
-  playClueSequence();
+/* ---- Pattern ---- */
+var pattern = [];
+var patLength = 5;
+var patSize = 8;
+
+function generatePattern() {
+  for (let i = 0; i < patLength; i++) {
+    pattern.push(Math.floor(Math.random() * patSize) + 1);
+  }
+  console.log(pattern);
 }
+
+/* ---- Timer ---- */
+var timeOut;
+var timer;
+var counter;
+
+function timeCounter() {
+  clearInterval(timeOut);
+  timer -= 1;
+  document.getElementById("time").innerHTML = timer;
+  document.getElementById("sTime").innerHTML = timer;
+  if (timer == 0) {
+    stopGame();
+  }
+  timeOut = setInterval(timeCounter, 1000);
+}
+
+/* ---- Game Controls ----*/
+function stopGame() {
+  allScores.push([progress, mistakesMade, timer]);
+  console.log(allScores);
+  clearInterval(timeOut);
+  if (progress == pattern.length - 1) {
+    document.getElementById("wonGame").classList.remove("hidden");
+  } else {
+    document.getElementById("lostGame").classList.remove("hidden");
+  }
+  gamePlaying = false;
+  pattern = [];
+  progress = 0;
+  mistakesMade = 0;
+  guessCounter = 0;
+  clueHoldTime = 850;
+  stopGameHide();
+}
+function prevDiff() {
+  stopGame();
+  if (mistakes == 1) {
+    speed();
+  } else if (patSize == 8) {
+    hard();
+  } else if (patSize == 6) {
+    med();
+  } else {
+    easy();
+  }
+}
+function showScores() {
+  //Can use this to implement a scoreboard in the future
+  document.getElementById("scoreValues").classList.remove("hidden");
+  for (let i = 0; i < allScores.length; i++) {
+    var scores = allScores[i];
+    document.getElementById("progScore").innerHTML = scores[0];
+    document.getElementById("misScore").innerHTML = scores[1];
+    document.getElementById("timeScore").innerHTML = scores[2];
+  }
+}
+
+/* ---- Game Mechanics ----*/
+var clueHoldTime;
+const cluePauseTime = 333;
+var nextClueWaitTime = 1000;
 
 function guess(btn) {
   console.log("user guessed: " + btn);
@@ -138,71 +192,18 @@ function guess(btn) {
     guessCounter++;
   }
 }
-//replay
-function prevDiff() {
-  stopGame();
-  if (mistakes == 1) {
-    speed();
-  } else if (patSize == 8) {
-    hard();
-  } else if (patSize == 6) {
-    med();
-  } else {
-    easy();
-  }
-}
-function stopGame() {
-  allScores.push([progress, mistakesMade, timer]);
-  console.log(allScores);
-  clearInterval(timeOut);
-  if (progress == pattern.length - 1) {
-    document.getElementById("wonGame").classList.remove("hidden");
-
-    //alert("Game Over. You won!");
-  } else {
-    document.getElementById("lostGame").classList.remove("hidden");
-    //alert("Game Over. You Lost.");
-  }
-  gamePlaying = false;
-  pattern = [];
-  progress = 0;
-  mistakesMade = 0;
+function playClueSequence() {
   guessCounter = 0;
-  clueHoldTime = 850;
-  stopGameHide();
-}
-/** can implement a leaderboard in the future using this method by sorting the progress 
-    before the for loop and finding a way to get all the scores to show. Getting
-    the scores are already implemented since it is going through all the scores in the list*/
-function showScores() {
-  document.getElementById("scoreValues").classList.remove("hidden");
-  for (let i = 0; i < allScores.length; i++) {
-    var scores = allScores[i];
-    document.getElementById("progScore").innerHTML = scores[0];
-    document.getElementById("misScore").innerHTML = scores[1];
-    document.getElementById("timeScore").innerHTML = scores[2];
+  context.resume();
+  let delay = nextClueWaitTime;
+  for (let i = 0; i <= progress; i++) {
+    console.log("play single clue: " + pattern[i] + " in " + delay + "ms");
+    setTimeout(playSingleClue, delay, pattern[i]);
+    delay += clueHoldTime;
+    delay += cluePauseTime;
+    clueHoldTime -= 25;
   }
 }
-//Time Countdown
-function timeCounter() {
-  clearInterval(timeOut);
-  timer -= 1;
-  document.getElementById("time").innerHTML = timer;
-  document.getElementById("sTime").innerHTML = timer;
-  if (timer == 0) {
-    stopGame();
-  }
-  timeOut = setInterval(timeCounter, 1000);
-}
-
-//Pattern & Sequences
-function generatePattern() {
-  for (let i = 0; i < patLength; i++) {
-    pattern.push(Math.floor(Math.random() * patSize) + 1);
-  }
-  console.log(pattern);
-}
-
 function playSingleClue(btn) {
   if (gamePlaying) {
     lightButton(btn);
@@ -210,45 +211,8 @@ function playSingleClue(btn) {
     setTimeout(clearButton, clueHoldTime, btn);
   }
 }
-function playClueSequence() {
-  guessCounter = 0;
-  context.resume();
-  let delay = nextClueWaitTime; //set delay to initial wait time
-  for (let i = 0; i <= progress; i++) {
-    // for each clue that is revealed so far
-    console.log("play single clue: " + pattern[i] + " in " + delay + "ms");
-    setTimeout(playSingleClue, delay, pattern[i]); // set a timeout to play that clue
-    delay += clueHoldTime;
-    delay += cluePauseTime;
-    clueHoldTime -= 25;
-  }
-}
 
-//Tone Controls
-function startTone(btn) {
-  if (!tonePlaying) {
-    context.resume();
-    o.frequency.value = freqMap[btn];
-    g.gain.setTargetAtTime(volume, context.currentTime + 0.05, 0.025);
-    context.resume();
-    tonePlaying = true;
-  }
-}
-
-function playTone(btn, len) {
-  o.frequency.value = freqMap[btn];
-  g.gain.setTargetAtTime(volume, context.currentTime + 0.05, 0.025);
-  context.resume();
-  tonePlaying = true;
-  setTimeout(function () {
-    stopTone();
-  }, len);
-}
-
-function stopTone() {
-  g.gain.setTargetAtTime(0, context.currentTime + 0.05, 0.025);
-  tonePlaying = false;
-}
+/* ---- Tone ----*/
 const freqMap = {
   1: 283.6,
   2: 308.5,
@@ -264,12 +228,36 @@ var AudioContext = window.AudioContext || window.webkitAudioContext;
 var context = new AudioContext();
 var o = context.createOscillator();
 var g = context.createGain();
+
 g.connect(context.destination);
 g.gain.setValueAtTime(0, context.currentTime);
 o.connect(g);
 o.start(0);
 
-//Controls HTML
+function startTone(btn) {
+  if (!tonePlaying) {
+    context.resume();
+    o.frequency.value = freqMap[btn];
+    g.gain.setTargetAtTime(volume, context.currentTime + 0.05, 0.025);
+    context.resume();
+    tonePlaying = true;
+  }
+}
+function playTone(btn, len) {
+  o.frequency.value = freqMap[btn];
+  g.gain.setTargetAtTime(volume, context.currentTime + 0.05, 0.025);
+  context.resume();
+  tonePlaying = true;
+  setTimeout(function () {
+    stopTone();
+  }, len);
+}
+function stopTone() {
+  g.gain.setTargetAtTime(0, context.currentTime + 0.05, 0.025);
+  tonePlaying = false;
+}
+
+/* ---- HTML ---- */
 function homeShow() {
   document.getElementById("demo").classList.remove("hidden");
   document.getElementById("strtBtn").classList.remove("hidden");
@@ -294,6 +282,7 @@ function homeHide() {
   document.getElementById("midDiff").classList.add("hidden");
   document.getElementById("hardDiff").classList.add("hidden");
   document.getElementById("prevScores").classList.add("hidden");
+  document.getElementById("timerBar").classList.add("hidden");
 }
 function diffHide() {
   document.getElementById("scoreValues").classList.add("hidden");

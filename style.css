@@ -131,9 +131,6 @@ h1 {
 
 /* ---- Demo ---- */
 #demo {
-  margin-left: auto;
-  margin-right: auto;
-  width: 38%;
   text-align: center;
 }
 #demoFrame {
@@ -143,10 +140,16 @@ h1 {
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
 }
+
 #demoVid {
-  width: 90%;
-  height: 88%; 
+  height: 310px;
+  width: 435px;
+  
 }
 
 /* ---- Control Bar ---- */
@@ -199,9 +202,7 @@ h1 {
 
 /* ---- Difficulty Menu ---- */
 #diffMenu{
-  margin-left: auto;
-  margin-right: auto;
-  width: 24%;
+  margin: 0;
 }
 #gameMenu {
   background-color: salmon;
@@ -212,6 +213,10 @@ h1 {
   background-repeat: no-repeat;
   background-position: center;
   border-radius: 20px;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  
 }
 #easy {
   font-family: "Sigmar One", sans-serif;
@@ -225,6 +230,7 @@ h1 {
   cursor: pointer;
   font-weight: bold;
   display: inline;
+  
 }
 #easy:hover {
   background-color: green;
@@ -232,6 +238,7 @@ h1 {
   color: white;
   font-size: 18px;
   font-weight: normal;
+  
 }
 
 #med {
@@ -305,7 +312,7 @@ h1 {
 
 /* ---- Menu Button ----*/
 #returnMenu {
-  color: white;
+  text-align:center;
 }
 #menu {
   background: none;
@@ -314,6 +321,8 @@ h1 {
   padding: 0;
   cursor: pointer;
   font-weight: bold;
+  color: white;
+  font-size:15px;
 }
 #menu:hover {
   opacity: 75%;
@@ -321,10 +330,9 @@ h1 {
 
 /* ---- Count Area ---- */
 #countBar {
-  display: flex;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
   text-align: center;
 }
 #gProg {
@@ -342,16 +350,14 @@ h1 {
   height: 18px;
 }
 
+
 /* ---- Timer ---- */
-#timerBar {
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-  display: flex;
-}
 #timer {
   display: table-cell;
+}
+#speedTimer {
+  margin: 0 auto;
+  text-align: center;
 }
 #timerImg {
   width: 13px;
@@ -363,6 +369,9 @@ h1 {
 }
 
 /* ---- Result Text ---- */
+#resultText{
+  text-align:center;
+}
 #wonGame {
   color: green;
   font-weight: 900;
@@ -572,17 +581,19 @@ h1 {
   background-position: center;
 }
 
-/* ----- Info Text CSS ---- */
-#myInfo {
+/* ----- My Info CSS ---- */
+#githubImg {
+  width: 35px;
+  height: 35px;
   position: fixed;
   bottom: 0;
-  right: 0;
-}
-#githubImg {
-  right: 50px;
-  width: 25px;
-  height: 25px;
+  left: 0;
 }
 #github:hover {
   opacity: 75%;
+}
+#infoText{
+  position: fixed;
+  right:45.2%;
+  bottom: 0;
 }
