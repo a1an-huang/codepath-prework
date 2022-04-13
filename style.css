@@ -12,6 +12,7 @@ html {
 *:after {
   box-sizing: inherit;
 }
+
 /* ---- Body ---- */
 body {
   font-weight: bold;
@@ -216,7 +217,8 @@ h1 {
   justify-content: center;
   align-items: center;
   margin: 0 auto;
-  
+  position: relative;
+
 }
 #easy {
   font-family: "Sigmar One", sans-serif;
@@ -230,6 +232,10 @@ h1 {
   cursor: pointer;
   font-weight: bold;
   display: inline;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   
 }
 #easy:hover {
@@ -240,7 +246,6 @@ h1 {
   font-weight: normal;
   
 }
-
 #med {
   font-family: "Sigmar One", sans-serif;
   border: 2px solid black;
@@ -252,6 +257,10 @@ h1 {
   cursor: pointer;
   font-weight: bold;
   display: inline;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 #med:hover {
   background-color: gold;
@@ -271,6 +280,10 @@ h1 {
   font-size: 16px;
   font-weight: bold;
   display: inline;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 #hard:hover {
   background-color: crimson;
@@ -288,6 +301,10 @@ h1 {
   padding: 9px 20px;
   font-size: 16px;
   font-weight: bold;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 #speed:hover {
   background-color: rebeccapurple;
@@ -298,13 +315,18 @@ h1 {
   display: inline;
 }
 #home {
+  font-family: "Sigmar One", sans-serif;
   background: none;
   border: none;
   margin: 0;
   padding: 0;
   cursor: pointer;
   font-weight: bold;
-  font-size: 12px;
+  font-size: 13px;
+  position: absolute;
+  top: 83%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 #home:hover {
   opacity: 75%;
@@ -329,32 +351,30 @@ h1 {
 }
 
 /* ---- Count Area ---- */
-#countBar {
-  margin: 0 auto;
-  justify-content: center;
-  align-items: center;
+#countArea {
   text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
 }
 #gProg {
-  display: table-cell;
+  margin: 0 auto;
+  text-align: center;
 }
 #progImg {
   width: 17px;
   height: 17px;
 }
-#mistakes {
-  display: table-cell;
+#mistakes{
+  margin: 0 auto;
+  text-align: center;
 }
 #mistakeImg {
   width: 18px;
   height: 18px;
 }
 
-
 /* ---- Timer ---- */
-#timer {
-  display: table-cell;
-}
 #speedTimer {
   margin: 0 auto;
   text-align: center;
@@ -594,6 +614,6 @@ h1 {
 }
 #infoText{
   position: fixed;
-  right:45.2%;
+  right: 1%;
   bottom: 0;
 }

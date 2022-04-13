@@ -1,12 +1,18 @@
 /* by Alan Huang */
+
+/* ---- Body ---- */
 body {
   background-color: slategrey;
   color: white;
   font-family: helvetica, arial, sans-serif;
 }
+
+/* ---- Header 1 ---- */
 h1 {
   font-family: verdana, arial, sans-serif;
 }
+
+/* ---- Anchor ---- */
 a,
 a:focus,
 a:active {
@@ -16,17 +22,19 @@ a:active {
 a:hover {
   opacity: 75%;
 }
+
+/* ---- Buttons ----*/
 button {
   padding: 10px;
   border-radius: 10px;
 }
 
-#space {
-  height: 100px;
-}
+/* ---- Classes ---- */
 .hidden {
   display: none;
 }
+
+/* ---- Start Button ---- */
 #startButton:hover {
   opacity: 75;
 }
@@ -34,6 +42,8 @@ button {
   opacity: 75;
 }
 
+
+/* ---- Game Buttons 1-4 ---- */
 #gameArea > button {
   width: 200px;
   height: 200px;

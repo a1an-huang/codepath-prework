@@ -88,22 +88,20 @@
     </div>
 
     <!-- Control Bar -->
-    <div id="controlBar">
-      <button id="endBtn" class="hidden" onclick="stopGame()">
+    <div id="controlBar" class="hidden">
+      <button id="endBtn" onclick="stopGame()">
         <img
           id="stopImg"
           src="https://cdn.glitch.global/2718326c-3a19-428c-be02-60b78405419a/stop-sign-google.png?v=1649476220110"
         />Stop
       </button>
-      <button id="replay" class="hidden" onclick="prevDiff()">
+      <button id="replay" onclick="prevDiff()">
         <img
           id="replayImg"
           src="https://cdn.glitch.global/2718326c-3a19-428c-be02-60b78405419a/1024px-Rewind_button.svg.png?v=1649476140113"
         />Reset
       </button>
-      <button id="prevScores" class="hidden" onclick="showScores()">
-        Previous Score
-      </button>
+      <button id="prevScores" onclick="showScores()">Previous Score</button>
       <div id="scoreValues" class="hidden">
         <span>Points Scored: </span><span id="progScore"></span>
         <span>Mistakes Made: </span><span id="misScore"></span>
@@ -112,8 +110,8 @@
     </div>
 
     <!-- Difficulty Buttons -->
-    <div id="diffMenu">
-      <div id="gameMenu" class="hidden">
+    <div id="diffMenu" class="hidden">
+      <div id="gameMenu">
         <div id="diffBtns">
           <div id="easyBtn">
             <button id="easy" onclick="easy()">Easy</button>
@@ -135,34 +133,34 @@
     </div>
 
     <!-- CounterBar-->
-    <div id="countBar">
-      <div id="countArea" class="hidden">
-        <div id="gProg">
+    <div id="countBar" class="hidden">
+      <div id="countArea">
+        <span id="gProg">
           <img
             id="progImg"
             src="https://cdn.glitch.global/2718326c-3a19-428c-be02-60b78405419a/f72a9dd3-87a6-40fb-89ed-92e7bc6a74ba.image.png?v=1649500623267"
           />
           Progress:
           <span id="progCount">0</span>/<span id="goal"></span>
-        </div>
-        <div id="mistakes">
+        </span>
+        <span id="mistakes">
           <img
             id="mistakeImg"
             src="https://cdn.glitch.global/2718326c-3a19-428c-be02-60b78405419a/istockphoto-622923118-612x612_ccexpress.png?v=1649477949223"
           />Mistakes Used: <span id="missCount">0</span>/<span
             id="totalMis"
           ></span>
-        </div>
-        <div id="timer" class="hidden">
+        </span>
+        <span id="timer" class="hidden">
           <img
             id="timerImg"
             src="https://cdn.glitch.global/2718326c-3a19-428c-be02-60b78405419a/hourglass.png?v=1649718780207"
           />Timer: <span id="time"></span>
-        </div>
+        </span>
       </div>
     </div>
 
-    <!-- Speed Timer -->
+    <!-- Speed Timers -->
     <div id="speedTimer" class="hidden">
       <img
         id="timerImg2"
@@ -179,8 +177,8 @@
     </div>
 
     <!-- Game Buttons -->
-    <div id="gameButtons">
-      <div id="gameArea" class="hidden">
+    <div id="gameButtons" class="hidden">
+      <div id="gameArea">
         <button
           id="btn1"
           onclick="guess(1)"
@@ -237,10 +235,8 @@
     </div>
 
     <!--Return To Menu Button -->
-    <div id="returnMenu">
-      <button id="menu" class="hidden" onclick="chooseDifficulty()">
-        Menu
-      </button>
+    <div id="returnMenu" class="hidden">
+      <button id="menu" onclick="chooseDifficulty()">Menu</button>
     </div>
 
     <!-- Info Text -->
