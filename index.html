@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
   <!-- BY ALAN HUANG -->
+
   <head>
-    <!-- Title & favicon -->
+    <!-- Title & Favicon -->
     <title>Light Memory Game</title>
     <link
+      id="favicon"
       rel="icon"
       type="image/x-icon"
       href="https://cdn.glitch.global/2718326c-3a19-428c-be02-60b78405419a/download%20(1)_ccexpress.png?v=1649642239602"
     />
-    <!-- import the webpage's stylesheet -->
-    <link rel="stylesheet" href="/style.css" />
-    <!-- import the webpage's javascript file -->
+
+    <!-- Imports -->
     <script src="/script.js" defer></script>
+    <link rel="stylesheet" href="/style.css" />
     <link
       rel="stylesheet"
       type="text/css"
@@ -21,187 +23,165 @@
   </head>
 
   <body>
-    <!-- legacy mode -->
-    <a id="legacy" href="legacy.html" style="color: slategray"
-      ><u>legacy mode</u></a
-    >
-    <!-- this is the start of content -->
-    <h1>
-      <img
-        id
-        src="https://cdn.glitch.global/2718326c-3a19-428c-be02-60b78405419a/08cc961c1ded28ea324430f570c4c3cf.gif?v=1649495414384"
-        width="40"
-        height="40"
-      />Light and Sound Memory Game<img
-        id
-        src="https://cdn.glitch.global/2718326c-3a19-428c-be02-60b78405419a/08cc961c1ded28ea324430f570c4c3cf.gif?v=1649495414384"
-        width="40"
-        height="40"
-      />
-    </h1>
-    <center>
+    <!-- Legacy Mode Button (Leads to Orignal Game)-->
+    <a id="legacy" href="legacy.html">Legacy Mode</a>
+
+    <!-- Intro -->
+    <div id="introText">
+      <h1>
+        <img
+          id="titleImg1"
+          src="https://cdn.glitch.global/2718326c-3a19-428c-be02-60b78405419a/08cc961c1ded28ea324430f570c4c3cf.gif?v=1649495414384"
+        />Light and Sound Memory Game<img
+          id="titleImg2"
+          src="https://cdn.glitch.global/2718326c-3a19-428c-be02-60b78405419a/08cc961c1ded28ea324430f570c4c3cf.gif?v=1649495414384"
+        />
+      </h1>
       <p id="welcoming" class="hidden">
         Welcome to the game! Select a Difficulty Below.
       </p>
       <p id="startPage">Click Start to select a difficulty!</p>
-    </center>
+    </div>
 
-    <!-- Buttons for Start/End Game-->
-    <center>
+    <!--Start Button & Paws-->
+    <div id="startBar">
       <span id="leftPaw">
         <img
-          id
+          id="leftPaw1"
           src="https://cdn.glitch.global/2718326c-3a19-428c-be02-60b78405419a/My%20project.png?v=1649467797244"
-          width="40"
-          height="40"
         />
         <img
+          id="leftPaw2"
           src="https://cdn.glitch.global/2718326c-3a19-428c-be02-60b78405419a/My%20project.png?v=1649467797244"
-          width="40"
-          height="40"
         />
         <img
+          id="leftPaw3"
           src="https://cdn.glitch.global/2718326c-3a19-428c-be02-60b78405419a/My%20project.png?v=1649467797244"
-          width="40"
-          height="40"
         />
       </span>
       <button id="strtBtn" onclick="chooseDifficulty()">Start</button>
       <span id="rightPaw">
         <img
+          id="rightPaw1"
           src="https://cdn.glitch.global/2718326c-3a19-428c-be02-60b78405419a/My%20project.png?v=1649467797244"
-          width="40"
-          height="40"
         />
         <img
+          id="rightPaw2"
           src="https://cdn.glitch.global/2718326c-3a19-428c-be02-60b78405419a/My%20project.png?v=1649467797244"
-          width="40"
-          height="40"
         />
         <img
+          id="rightPaw3"
           src="https://cdn.glitch.global/2718326c-3a19-428c-be02-60b78405419a/My%20project.png?v=1649467797244"
-          width="40"
-          height="40"
         />
       </span>
+    </div>
+
+    <!-- Demo Video Provided by Code Path-->
+    <div id="demo">
+      <p>Rules and Demo of the Game Below!</p>
+      <div id="demoFrame">
+        <iframe
+          id="demoVid"
+          src="https://www.youtube.com/embed/Zd_rLsJGtts"
+        ></iframe>
+      </div>
+    </div>
+
+    <!-- Control Bar -->
+    <div id="controlBar">
       <button id="endBtn" class="hidden" onclick="stopGame()">
         <img
-          width="10"
-          height="10"
+          id="stopImg"
           src="https://cdn.glitch.global/2718326c-3a19-428c-be02-60b78405419a/stop-sign-google.png?v=1649476220110"
-        />Stop&nbsp;&nbsp;
+        />Stop
       </button>
       <button id="replay" class="hidden" onclick="prevDiff()">
         <img
-          width="10"
-          height="10"
+          id="replayImg"
           src="https://cdn.glitch.global/2718326c-3a19-428c-be02-60b78405419a/1024px-Rewind_button.svg.png?v=1649476140113"
         />Reset
       </button>
       <button id="prevScores" class="hidden" onclick="showScores()">
         Previous Score
       </button>
-      <div id="scoreValues" class="hidden" style="font-size: 12px">
+      <div id="scoreValues" class="hidden">
         <span>Points Scored: </span><span id="progScore"></span>
         <span>Mistakes Made: </span><span id="misScore"></span>
         <span>Time Left: </span><span id="timeScore"></span>
       </div>
-      <!-- Difficulty buttons -->
+    </div>
+
+    <!-- Difficulty Buttons -->
+    <div id="diffMenu">
       <div id="gameMenu" class="hidden">
-        <div></div>
-        <br />
-        <br />
-        <br />
-        <button id="easy" onclick="easy()">Easy</button>
-        <div></div>
-        <br />
-        <button id="med" onclick="med()">Medium</button>
-        <div></div>
-        <br />
-        <button id="hard" onclick="hard()">Hard</button>
-        <div></div>
-        <br />
-        <button id="speed" onclick="speed()">Speed</button>
-        <div></div>
-        <br />
-        <button
-          id="home"
-          onclick="home()"
-          style="color: white; font-weight: bold"
-        >
-          HomePage
-        </button>
-        <div></div>
+        <div id="easyBtn">
+          <button id="easy" onclick="easy()">Easy</button>
+        </div>
+        <div id="medBtn">
+          <button id="med" onclick="med()">Medium</button>
+        </div>
+        <div id="hardBtn">
+          <button id="hard" onclick="hard()">Hard</button>
+        </div>
+        <div id="speedBtn">
+          <button id="speed" onclick="speed()">Speed</button>
+        </div>
+        <div id="homeBtn">
+          <button id="home" onclick="home()">HomePage</button>
+        </div>
       </div>
-    </center>
-    <!-- Video(code path video doesnt work since its unlisted) -->
-    <center id="demo">
-      <p>Rules and Demo of the Game Below!</p>
-      <div id="demoFrame">
-        <br />
-        <iframe
-          width="420"
-          height="315"
-          src="https://www.youtube.com/embed/Zd_rLsJGtts"
-        ></iframe>
-      </div>
-    </center>
-    <!-- Counters -->
-    <center>
+    </div>
+
+    <!-- CounterBar-->
+    <div id="countBar">
       <div id="countArea" class="hidden">
-        <div id="gProg" style="display: table-cell">
+        <div id="gProg">
           <div id="progFill">
             <img
-              width="17"
-              height="17"
+              id="progImg"
               src="https://cdn.glitch.global/2718326c-3a19-428c-be02-60b78405419a/f72a9dd3-87a6-40fb-89ed-92e7bc6a74ba.image.png?v=1649500623267"
             />
             Progress:
             <span id="progCount">0</span>/<span id="goal"></span>
           </div>
         </div>
-        <div id="mistakes" style="display: table-cell">
-          &nbsp;&nbsp;
+        <div id="mistakes">
           <img
-            width="18"
-            height="18"
+            id="mistakeImg"
             src="https://cdn.glitch.global/2718326c-3a19-428c-be02-60b78405419a/istockphoto-622923118-612x612_ccexpress.png?v=1649477949223"
           />Mistakes Used: <span id="missCount">0</span>/<span
             id="totalMis"
           ></span>
         </div>
-
-        <div id="timer" style="display: table-cell">
-          &nbsp;&nbsp;
-          <img
-            width="13"
-            height="13"
-            src="https://cdn.glitch.global/2718326c-3a19-428c-be02-60b78405419a/hourglass.png?v=1649718780207"
-          />Timer: <span id="time"></span>
-        </div>
       </div>
 
+      <!-- Timers -->
+      <div id="timerBar">
+        <span id="timer" class="hidden">
+          <img
+            id="timerImg"
+            src="https://cdn.glitch.global/2718326c-3a19-428c-be02-60b78405419a/hourglass.png?v=1649718780207"
+          />Timer: <span id="time"></span>
+        </span>
+      </div>
       <div id="speedTimer" class="hidden">
         <img
-          width="13"
-          height="13"
+          id="timerImg2"
           src="https://cdn.glitch.global/2718326c-3a19-428c-be02-60b78405419a/hourglass.png?v=1649718780207"
         />Timer: <span id="sTime"></span>
       </div>
-    </center>
+    </div>
+
     <!-- Result Text -->
-    <center>
+    <div id="ResultText">
       <div id="gameRes">
-        <span id="wonGame" class="hidden" style="color: green; font-weight: 900"
-          >Congratulations. You won!</span
-        >
-        <span id="lostGame" class="hidden" style="color: red; font-weight: 900"
-          >Game Over. You lost!</span
-        >
+        <span id="wonGame" class="hidden">Congratulations. You won!</span>
+        <span id="lostGame" class="hidden">Game Over. You lost!</span>
       </div>
-    </center>
+    </div>
+
     <!-- Game Buttons -->
-    <center>
+    <div id="gameButtons">
       <div id="gameArea" class="hidden">
         <button
           id="btn1"
@@ -256,27 +236,22 @@
           ></button>
         </span>
       </div>
-    </center>
-    <center>
-      <!--menu -->
-      <button
-        id="menu"
-        class="hidden"
-        onclick="chooseDifficulty()"
-        style="font-weight: bold; color: white"
-      >
+    </div>
+
+    <!--Return To Menu Button -->
+    <div id="returnMenu">
+      <button id="menu" class="hidden" onclick="chooseDifficulty()">
         Menu
       </button>
-      <!-- bottom text -->
-      <p style="position: fixed; bottom: 0; right: 0">
-        <a href="https://github.com/a1an-huang/codepath-prework" target="_blank"
-          ><img
-            id="github"
-            width="25"
-            height="25"
-            src="https://cdn.glitch.global/2718326c-3a19-428c-be02-60b78405419a/github-icon-white-6.jpg?v=1649692667112" /></a
-        >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;by Alan Huang&nbsp;&nbsp;
-      </p>
-    </center>
+    </div>
+
+    <!-- Info Text -->
+    <div id="myInfo">
+      <a href="https://github.com/a1an-huang/codepath-prework" target="_blank"
+        ><img
+          id="githubImg"
+          src="https://cdn.glitch.global/2718326c-3a19-428c-be02-60b78405419a/github-icon-white-6.jpg?v=1649692667112" /></a
+      >by Alan Huang
+    </div>
   </body>
 </html>
