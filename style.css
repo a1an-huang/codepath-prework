@@ -158,6 +158,7 @@ h1 {
   text-align: center;
   align-items: center;
   justify-content: center;
+  left:50%;
 }
 #endBtn {
   background: red;
@@ -209,6 +210,7 @@ h1 {
 
 /* ---- Difficulty Menu ---- */
 #diffMenu{
+  text-align:center;
   margin: 0;
 }
 #gameMenu {

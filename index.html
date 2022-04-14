@@ -24,7 +24,7 @@
 
   <body>
     <!-- Legacy Mode Button (Leads to Orignal Game)-->
-    <a id="legacy" href="legacy.html">Legacy Mode</a>
+    <a id="legacy" href="legacy.html" class="splash menuHide">Legacy Mode</a>
 
     <!-- Intro -->
     <div id="introText">
@@ -37,14 +37,16 @@
           src="https://cdn.glitch.global/2718326c-3a19-428c-be02-60b78405419a/08cc961c1ded28ea324430f570c4c3cf.gif?v=1649495414384"
         />
       </h1>
-      <p id="welcoming" class="hidden">
+      <p id="welcoming" class="hidden splashHide menu startHide speedHide">
         Welcome to the game! Select a Difficulty Below.
       </p>
-      <p id="startPage">Click Start to select a difficulty!</p>
+      <p id="startPage" class="splash menuHide">
+        Click Start to select a difficulty!
+      </p>
     </div>
 
     <!--Start Button & Paws-->
-    <div id="startBar">
+    <div id="startBar" class="startHide menu speedHide">
       <span id="leftPaw">
         <img
           id="leftPaw1"
@@ -59,7 +61,9 @@
           src="https://cdn.glitch.global/2718326c-3a19-428c-be02-60b78405419a/My%20project.png?v=1649467797244"
         />
       </span>
-      <button id="strtBtn" onclick="chooseDifficulty()">Start</button>
+      <button id="strtBtn" onclick="chooseDifficulty()" class="splash menuHide">
+        Start
+      </button>
       <span id="rightPaw">
         <img
           id="rightPaw1"
@@ -77,7 +81,7 @@
     </div>
 
     <!-- Demo Video Provided by Code Path-->
-    <div id="demo">
+    <div id="demo" class="splash menuHide">
       <p>Rules and Demo of the Game Below!</p>
       <div id="demoFrame">
         <iframe
@@ -88,31 +92,48 @@
     </div>
 
     <!-- Control Bar -->
-    <div id="controlBar" class="hidden">
-      <button id="endBtn" onclick="stopGame()">
+    <div id="controlBar">
+      <button
+        id="endBtn"
+        onclick="stopGame()"
+        class="hidden menuHide start stop speed"
+      >
         <img
           id="stopImg"
           src="https://cdn.glitch.global/2718326c-3a19-428c-be02-60b78405419a/stop-sign-google.png?v=1649476220110"
         />Stop
       </button>
-      <button id="replay" onclick="prevDiff()">
+      <button
+        id="replay"
+        onclick="prevDiff()"
+        class="hidden menuHide start speed"
+      >
         <img
           id="replayImg"
           src="https://cdn.glitch.global/2718326c-3a19-428c-be02-60b78405419a/1024px-Rewind_button.svg.png?v=1649476140113"
         />Reset
       </button>
-      <button id="prevScores" onclick="showScores()">Previous Score</button>
+      <button
+        id="prevScores"
+        onclick="showScores()"
+        class="hidden menuHide start speed"
+      >
+        Previous Score
+      </button>
       <div id="scoreBoard">
-        <div id="scoreValues" class="hidden">
-          <div>Points Scored: </div><span id="progScore"></span>
-          <div>Mistakes Made: </div><span id="misScore"></span>
-          <div>Time Left: </div><span id="timeScore"></span>
+        <div id="scoreValues" class="hidden start menuHide">
+          <div>Points Scored:</div>
+          <span id="progScore"></span>
+          <div>Mistakes Made:</div>
+          <span id="misScore"></span>
+          <div>Time Left:</div>
+          <span id="timeScore"></span>
         </div>
       </div>
     </div>
 
     <!-- Difficulty Buttons -->
-    <div id="diffMenu" class="hidden">
+    <div id="diffMenu" class="hidden splashHide menu startHide speedHide">
       <div id="gameMenu">
         <div id="diffBtns">
           <div id="easyBtn">
@@ -135,7 +156,7 @@
     </div>
 
     <!-- CounterBar-->
-    <div id="countBar" class="hidden">
+    <div id="countBar" class="hidden menuHide start stop">
       <div id="countArea">
         <span id="gProg">
           <img
@@ -153,7 +174,7 @@
             id="totalMis"
           ></span>
         </span>
-        <span id="timer" class="hidden">
+        <span id="timer" class="hidden start">
           <img
             id="timerImg"
             src="https://cdn.glitch.global/2718326c-3a19-428c-be02-60b78405419a/hourglass.png?v=1649718780207"
@@ -163,23 +184,25 @@
     </div>
 
     <!-- Speed Timers -->
-    <div id="speedTimer" class="hidden">
-      <img
-        id="timerImg2"
-        src="https://cdn.glitch.global/2718326c-3a19-428c-be02-60b78405419a/hourglass.png?v=1649718780207"
-      />Timer: <span id="sTime"></span>
+    <div id="speedTimer">
+      <div id="showSpeedTimer" class="hidden menuHide speed stop">
+        <img
+          id="timerImg2"
+          src="https://cdn.glitch.global/2718326c-3a19-428c-be02-60b78405419a/hourglass.png?v=1649718780207"
+        />Timer: <span id="sTime"></span>
+      </div>
     </div>
 
     <!-- Result Text -->
     <div id="resultText">
-      <div id="gameRes">
+      <div id="gameRes" class="menuHide startHide stopShow speedHide">
         <span id="wonGame" class="hidden">Congratulations. You won!</span>
         <span id="lostGame" class="hidden">Game Over. You lost!</span>
       </div>
     </div>
 
     <!-- Game Buttons -->
-    <div id="gameButtons" class="hidden">
+    <div id="gameButtons" class="hidden menuHide start speed">
       <div id="gameArea">
         <button
           id="btn1"
@@ -205,7 +228,7 @@
           onmousedown="startTone(4)"
           onmouseup="stopTone()"
         ></button>
-        <span id="medDiff" class="hidden">
+        <span id="medDiff" class="hidden menuHide med">
           <button
             id="btn5"
             onclick="guess(5)"
@@ -219,7 +242,7 @@
             onmouseup="stopTone()"
           ></button>
         </span>
-        <span id="hardDiff" class="hidden">
+        <span id="hardDiff" class="hidden menuHide hard">
           <button
             id="btn7"
             onclick="guess(7)"
@@ -237,12 +260,17 @@
     </div>
 
     <!--Return To Menu Button -->
-    <div id="returnMenu" class="hidden">
-      <button id="menu" onclick="chooseDifficulty()">Menu</button>
+    <div id="returnMenu">
+      <button
+        id="menu"
+        class="hidden menuHide start speed"
+        onclick="chooseDifficulty()"
+      >
+        Menu
+      </button>
     </div>
 
     <!-- Info Text -->
-
     <div id="myInfo">
       <a href="https://github.com/a1an-huang/codepath-prework" target="_blank"
         ><img
