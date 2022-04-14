@@ -22,8 +22,17 @@ var mistakesMade = 0;
 function startGame() {
   mistakesMade = 0;
   gamePlaying = true;
-  startDefault();
   timeOut = setInterval(timeCounter, 1000);
+  startDefault();
+  generatePattern();
+  playClueSequence();
+}
+function startSpeedGame() {
+  mistakesMade = 0;
+  gamePlaying = true;
+  clueHoldTime = 450;
+  timeOut = setInterval(timeCounter, 1000);
+  speedDefault();
   generatePattern();
   playClueSequence();
 }
@@ -50,8 +59,9 @@ function med() {
   patSize = 6;
   counter = timer * 1000;
   mistakes = 3;
-  document.getElementById("medDiff").classList.remove("hidden");
+  document.getElementsByClassName("med")[0].style.display = "inline";
   document.getElementById("gameArea").style.width = "535px";
+  document.getElementById("sTime").innerHTML = timer;
   startGame();
 }
 function hard() {
@@ -61,33 +71,21 @@ function hard() {
   patSize = 8;
   counter = timer * 1000;
   mistakes = 2;
-  document.getElementById("medDiff").classList.remove("hidden");
-  document.getElementById("hardDiff").classList.remove("hidden");
+  document.getElementsByClassName("med")[0].style.display = "inline";
+  document.getElementsByClassName("hard")[0].style.display = "inline";
   document.getElementById("gameArea").style.width = "710px";
   startGame();
 }
 function speed() {
   patLength = 6;
-  timer = 10;
+  timer = 8;
   patSize = 6;
+  progress = patSize - 2;
   counter = timer * 1000;
   mistakes = 1;
-  document.getElementById("medDiff").classList.remove("hidden");
+  document.getElementsByClassName("med")[0].style.display = "inline";
   document.getElementById("gameArea").style.width = "535px";
   startSpeedGame();
-}
-function startSpeedGame() {
-  speedDefault();
-  mistakesMade = 0;
-  progress = 0;
-  gamePlaying = true;
-  progress = pattern.length - 2;
-  clueHoldTime = 500;
-
-  document.getElementById("sTime").innerHTML = timer;
-  timeOut = setInterval(timeCounter, 1000);
-  generatePattern();
-  playClueSequence();
 }
 
 /* ---- Pattern ---- */
@@ -122,9 +120,11 @@ function timeCounter() {
 function stopGame() {
   if (progress == pattern.length - 1) {
     totalWins++;
+    document.getElementById("lostGame").classList.add("hidden");
     document.getElementById("wonGame").classList.remove("hidden");
   } else {
     totalLoses++;
+    document.getElementById("wonGame").classList.add("hidden");
     document.getElementById("lostGame").classList.remove("hidden");
   }
   allScores.push([progress, mistakesMade, timer, totalWins, totalLoses]);
@@ -257,85 +257,71 @@ function stopTone() {
 
 /* ---- HTML ---- */
 function homeDefault() {
-  document.getElementById("startPage").classList.remove("hidden");
-  document.getElementById("startBar").classList.remove("hidden");
-  document.getElementById("demo").classList.remove("hidden");
-  document.getElementById("strtBtn").classList.remove("hidden");
-  document.getElementById("legacy").classList.remove("hidden");
-
-  document.getElementById("welcoming").classList.add("hidden");
-  document.getElementById("diffMenu").classList.add("hidden");
+  var homeShow = document.getElementsByClassName("splash");
+  for (var i = 0; i < homeShow.length; i++) {
+    homeShow[i].style.display = "inline";
+  }
+  var homeHide = document.getElementsByClassName("splashHide");
+  for (var i = 0; i < homeHide.length; i++) {
+    homeHide[i].style.display = "none";
+  }
 }
 function diffMenuDefault() {
-  document.getElementById("welcoming").classList.remove("hidden");
-  document.getElementById("diffMenu").classList.remove("hidden");
-  document.getElementById("leftPaw").classList.remove("hidden");
-  document.getElementById("rightPaw").classList.remove("hidden");
-
-  document.getElementById("legacy").classList.add("hidden");
-  document.getElementById("startPage").classList.add("hidden");
-  document.getElementById("strtBtn").classList.add("hidden");
-  document.getElementById("demo").classList.add("hidden");
-  document.getElementById("speedTimer").classList.add("hidden");
-  document.getElementById("controlBar").classList.add("hidden");
-  document.getElementById("countBar").classList.add("hidden");
-  document.getElementById("medDiff").classList.add("hidden");
-  document.getElementById("hardDiff").classList.add("hidden");
-  document.getElementById("gameButtons").classList.add("hidden");
-  document.getElementById("returnMenu").classList.add("hidden");
-  document.getElementById("wonGame").classList.add("hidden");
-  document.getElementById("lostGame").classList.add("hidden");
+  var menuShow = document.getElementsByClassName("menu");
+  for (var i = 0; i < menuShow.length; i++) {
+    menuShow[i].style.display = "block";
+  }
+  var menuHide = document.getElementsByClassName("menuHide");
+  for (var i = 0; i < menuHide.length; i++) {
+    menuHide[i].style.display = "none";
+  }
 }
 function startDefault() {
-  document.getElementById("returnMenu").classList.remove("hidden");
-  document.getElementById("gameButtons").classList.remove("hidden");
-  document.getElementById("controlBar").classList.remove("hidden");
-  document.getElementById("countBar").classList.remove("hidden");
-  document.getElementById("endBtn").classList.remove("hidden");
-  document.getElementById("timer").classList.remove("hidden");
-  
-  document.getElementById("wonGame").classList.add("hidden");
-  document.getElementById("lostGame").classList.add("hidden");
-  document.getElementById("startBar").classList.add("hidden");
-  document.getElementById("welcoming").classList.add("hidden");
-  document.getElementById("diffMenu").classList.add("hidden");
-  document.getElementById("demo").classList.add("hidden");
-
-  document.getElementById("goal").innerHTML = patLength;
-  document.getElementById("progCount").innerHTML = progress;
-  document.getElementById("totalMis").innerHTML = mistakes - 1;
-  document.getElementById("missCount").innerHTML = mistakesMade;
-  document.getElementById("goal").innerHTML = patLength;
-  document.getElementById("time").innerHTML = timer;
+  var startShow = document.getElementsByClassName("start");
+  for (var i = 0; i < startShow.length; i++) {
+    startShow[i].style.display = "inline";
+  }
+  var startHide = document.getElementsByClassName("startHide");
+  for (var i = 0; i < startHide.length; i++) {
+    startHide[i].style.display = "none";
+  }
+  var elems = ["goal", "progCount", "totalMis", "missCount", "goal", "time"];
+  var vals = [
+    patLength,
+    progress,
+    mistakes - 1,
+    mistakesMade,
+    patLength,
+    timer,
+  ];
+  for (var i = 0; i < elems.length; i++) {
+    document.getElementById(elems[i]).innerHTML = vals[i];
+  }
 }
 function speedDefault() {
-  document.getElementById("returnMenu").classList.remove("hidden");
-  document.getElementById("gameButtons").classList.remove("hidden");
-  document.getElementById("controlBar").classList.remove("hidden");
-  document.getElementById("speedTimer").classList.remove("hidden");
-  document.getElementById("endBtn").classList.remove("hidden");
-
-  document.getElementById("startBar").classList.add("hidden");
-  document.getElementById("welcoming").classList.add("hidden");
-  document.getElementById("diffMenu").classList.add("hidden");
-  document.getElementById("demo").classList.add("hidden");
-
-  document.getElementById("goal").innerHTML = patLength;
-  document.getElementById("progCount").innerHTML = progress;
-  document.getElementById("totalMis").innerHTML = mistakes - 1;
-  document.getElementById("missCount").innerHTML = mistakesMade;
-  document.getElementById("goal").innerHTML = patLength;
-  document.getElementById("time").innerHTML = timer;
+  document.getElementById("sTime").innerHTML = timer;
+  var speedShow = document.getElementsByClassName("speed");
+  for (var i = 0; i < speedShow.length; i++) {
+    speedShow[i].style.display = "inline";
+  }
+  var speedHide = document.getElementsByClassName("speedHide");
+  for (var i = 0; i < speedHide.length; i++) {
+    speedHide[i].style.display = "none";
+  }
 }
 function stopDefault() {
-  document.getElementById("scoreValues").classList.add("hidden");
-  document.getElementById("endBtn").classList.add("hidden");
-  document.getElementById("countBar").classList.add("hidden");
+  var stop = document.getElementsByClassName("stop");
+  for (var i = 0; i < stop.length; i++) {
+    stop[i].style.display = "none";
+  }
+  var stopShow = document.getElementsByClassName("stopShow");
+  for (var i = 0; i < stopShow.length; i++) {
+    stopShow[i].style.display = "inline";
+  }
 }
 function lightButton(btn) {
   document.getElementById("btn" + btn).classList.add("lit");
 }
-
 function clearButton(btn) {
   document.getElementById("btn" + btn).classList.remove("lit");
 }
