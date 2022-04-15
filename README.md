@@ -4,16 +4,16 @@
 
 Submitted by: **Alan Huang**
 
-Time spent: **10** hours spent in total
+Time spent: **86** hours spent in total
+![](https://i.imgur.com/CND2ALf.png)
 
 Link to project: (https://glitch.com/edit/#!/juvenile-polar-tumble)
-
 ## Required Functionality
 
 The following **required** functionality is complete:
 
 - [x] Game interface has a heading (h1 tag), a line of body text (p tag), and four buttons that match the demo app
-- [x] "Start" button toggles between "Start" and "Stop" when clicked.
+- [x] "Start" button toggles between "Start" and "Stop" when clicked. (Start Leads to Menu instead)
 - [x] Game buttons each light up and play a sound when clicked.
 - [x] Computer plays back sequence of clues including sound and visual cue for each button
 - [x] Play progresses to the next turn (the user gets the next step in the pattern) after a correct guess.
@@ -32,24 +32,19 @@ The following **optional** features are implemented:
 - [x] User has a limited amount of time to enter their guess on each turn
 
 The following **additional** features are implemented:
-
-- [x] Create a HomePage for the Mini Game
-- [x] Link to Github repo onpage
-- [x] Included Demo Video to show rules of the game
-- [x] Create a countdown timer
-- [x] Create Counter for Mistakes and Progress 
-- [x] Replay Button, resets Games
-- [x] Menu with 3 different difficulty modes
-- [X] Custom Mode (Speed Mode, One Life, 1 Round with 6 Patterns)
-- [x] Legacy Mode
-- [x] Previous Score
+- [x] Cat Theme :cat: 
+- [x] Home Page with Demo Video :house_buildings: 
+- [x] Link to Github repo Onpage :cat2: 
+- [x] Counter for Mistakes, Progress, and Timer :hourglass_flowing_sand: 
+- [x] Previous Score & Total Wins :100: 
+- [x] Menu with 3 different Difficulty Modes (Easy, Medium, Hard)  :8ball: 
+- [X] Speed Mode (One Life, 1 Round with 6 Patterns) :fast_forward: 
+- [x] Legacy Mode (Original Game Mode) :old_key: 
+- [x] Custom Mode ( User gets to choose Score, Pattern size, Mistakes, Timer and Speed) :customs: 
 
 ## Video Walkthrough (GIF)
 
 If you recorded multiple GIFs for all the implemented features, you can add them here:
-
-
-Recording Software Showing the Lighter Buttons as Blank :crying_cat_face:
 
 
 
@@ -69,7 +64,7 @@ Recording Software Showing the Lighter Buttons as Blank :crying_cat_face:
 ![](https://i.imgur.com/gNa2Kzi.gif)
     
     
-    Shows Previous Score
+    Showing Previous Score
 ![](https://i.imgur.com/zLr2c6S.gif)
 
     New Game Mode!!! Speed Round!!!! I'm too slow D:
@@ -96,29 +91,29 @@ GIFs created with [LiceCap], https://www.cockos.com/licecap/
 
 1. If you used any outside resources to help complete your submission (websites, books, people, etc) list them here.
 
-   HTML/CSS/JS tool: https://www.w3schools.com/, https://stackoverflow.com/, https://devdocs.io/javascript/, https://www.youtube.com
+   : &emsp;HTML/CSS/JS tool: https://www.w3schools.com/,                                          https://stackoverflow.com/, https://devdocs.io/javascript/, https://www.freecodecamp.org/
    
-   Tools: https://hackmd.io/, https://glitch.com/, https://github.com, https://www.adobe.com/creativecloud/
+   : &emsp;Tools: https://hackmd.io/, https://glitch.com/, https://github.com, https://www.adobe.com/creativecloud/
    
-   IMG's: https://express.adobe.com/tools/remove-background/#, Google Images
+   : &emsp;IMG's: https://express.adobe.com/tools/remove-background/#, Google Images, https://www.vecteezy.com/
    
- 
 
    
 
 2. What was a challenge you encountered in creating this submission (be specific)? How did you overcome it? (recommended 200 - 400 words)
 
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Creating a Web Project was always something I feared, but always wanted to do. My knowledge of the features that HTML and CSS had to offer was non-existent and JavaScript is a coding language I almost never worked with. There were many obstacles when I first started developing this project. The features I had planned for my website were not coming together as I envisioned. The HTML I had written did not correctly place my text and images. None of the text or images were placed properly, which did not make it pleasing to look at. The countdown timer feature was not functioning properly as it counted down too quickly at first and even went below zero. Through the usage of outside resources such as w3school, StackOverflow, and some Youtube videoes, I was able to find the source of my problems and debug my work. As everything started to come in a place like a puzzle, I was also growing more comfortable with using HTML, CSS, and JavaScript. As my skills with these tools increased, so did my confidence. The features I wanted to implement suddenly became possible, and what I envisioned for this project started coming together. Looking back, the main reason I was able to overcome the challenges I faced was because of my perseverance. It stopped me from giving up and allowed me to work through many roadblocks. Going forward, I am more confident in my abilities in creating and launching projects related to web development. I am proud of what I was able to accomplish with this web project and look forward to creating more.
+     : &emsp; A challenge I faced during this submission was cleanly separating the logic between the different parts of my web application. I am using HTML and CSS to structure and style the user interface while using JavaScript to drive the core functionality. While writing JavaScript, I had to take extra precautions to ensure my code was written cleanly. To overcome this challenge the solution I came up with was to modify the DOM by utilizing classes. I assigned a combination of classes to the various elements I wanted to display and hide. I used iteration in order to switch the display property for each of the elements. This was beneficial to me since it cut out a lot of boilerplate and reduced redundancy in my code. Another challenge I faced was with the count-down timer. In the beginning, it was not functioning properly as it was counting down too quickly and going below zero. By researching this problem,  I came across the official documentation for time functions in javascript. Reading through this helped me better understand how to rewrite the timer function to have its functionality align with the specifications. As my skills with these tools increased, so did my confidence. The features I wanted to implement suddenly became possible, and what I envisioned for this project started coming together. Looking back, the main reason I was able to overcome the challenges I faced was because of my perseverance. It stopped me from giving up and allowed me to work through many roadblocks. Going forward, I am more confident in my abilities in creating and launching projects related to web development. I am proud of what I was able to accomplish with this web project and look forward to creating more.
 
     
 3. What questions about web development do you have after completing your submission? (recommended 100 - 300 words)
       
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Though I learned a lot about web development through this experience, it also made me more intrigued about it and brought about more questions. How are websites such as salesforce.com created to be fully functional to the mass population? Are there more tools that can be used to develop than just HTML, CSS, and JavaScript? What is the point of these platforms and frameworks? Why is this pre-internship offering to teach platforms and frameworks such as AWS, Heroku, React, Postgres, SQL, and MongoDB? How is becoming efficient with these tools going to make me a better Web Developer? There are many questions of mine still left unanswered. I would love the opportunity to answer my questions and continue to ask questions as my passion and curiosity about web development grow.
+      : &emsp;I learned a lot about web development through this project. Completing this submission made me more intrigued about Web Development. Which brought about more questions. Since I first learned about Salesforce a few years ago, I’ve been interested in how it works. I read a statistic that 95% of the companies in the Fortune 100 run at least one app from the Salesforce AppExchange. I am eager to learn how technologies such as AWS, Heroku, React Postgres, SQL, and MongoDB are used at Salesforce to allow scaling to 150,000+ users. Learning technology has always been a passion of mine, and I’d love to see and learn about the technologies powering the largest CRM in the world. As I continue to expand my knowledge and answer these questions, my ability as a web developer will grow.
 
 
 4. If you had a few more hours to work on this project, what would you spend them doing (for example: refactoring certain functions, adding additional features, etc). Be specific. (recommended 100 - 300 words)
   
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;If I had a few more hours to work on this project I would most definitely make the user experience more enjoyable by making the website more interactive. I would redesign the layout of the website and implement more features. I would like to have written rules alongside the demo video, so the users do not always have to watch the video for the rules. I would implement a dropdown menu selection, which will drop down from the top of the screen to the middle with redesigned difficulty buttons that are easier to read. This dropdown would allow players to pause a game if they are currently in the middle of one. I look to redesign my buttons and add custom sounds to make my game look more aesthetically pleasing and match the theme I was going for. My last idea is to include a tracking feature that would give users the ability to see their win-loss ratio across different games. These functions would change the way the game is played while still maintaining the original layout of the Light and Sound Memory Game. Although some of these features may seem small, it adds dimension and pushes the game to be more interactive. In my opinion, attention to detail is very important, since it can make or break the overall user experience.
+      : &emsp;If I had a few more hours to work on this project I would most definitely make the user experience more enjoyable by making the website more interactive. To do this I would redesign the layout of the website and implement more features. One aspect I want to implement is having written rules alongside the demo video so the user does not always have to click on the video to learn the game. I’m also looking to refactor the menu in which I would implement a dropdown menu selection. This dropdown menu would overlap with the current page the user is on, and this would allow the user to pause a game if they are currently in progress. The menu will also be redesigned with a new UI to better match the theme I was going for and make my game look more aesthetically pleasing. My last idea is to improve the tracking feature. Instead of just displaying the total amount of wins and the previous score, I would like to build upon this and build a full-on scoreboard that would track the top 10 scores across the different game modes. This feature would also let the user see their total win-loss ratio across the different games. These changes will slightly alter the way the game is played while still maintaining the original layout of the Light and Sound Memory Game. Although some of these features seem minor, it adds dimension and pushes the game to be more interactive. In my opinion, attention to detail is very important, since it can make or break the overall user experience.	
+
 
 
 
