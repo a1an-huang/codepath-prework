@@ -50,9 +50,10 @@ function easy() {
   patSize = 4;
   counter = timer * millisec;
   mistakes = 4;
-  document.getElementById("gameArea").style.width = "375px";
+  gameArea();
   startGame();
 }
+
 function med() {
   clueHoldTime = 800;
   patLength = 7;
@@ -60,9 +61,7 @@ function med() {
   patSize = 6;
   counter = timer * millisec;
   mistakes = 3;
-  document.getElementsByClassName("med")[0].style.display = "inline";
-  document.getElementById("gameArea").style.width = "535px";
-  document.getElementById("sTime").innerHTML = timer;
+  gameArea();
   startGame();
 }
 function hard() {
@@ -72,9 +71,7 @@ function hard() {
   patSize = 8;
   counter = timer * millisec;
   mistakes = 2;
-  document.getElementsByClassName("med")[0].style.display = "inline";
-  document.getElementsByClassName("hard")[0].style.display = "inline";
-  document.getElementById("gameArea").style.width = "710px";
+  gameArea();
   startGame();
 }
 function speed() {
@@ -84,9 +81,27 @@ function speed() {
   progress = patSize - 2;
   counter = timer * millisec;
   mistakes = 1;
-  document.getElementsByClassName("med")[0].style.display = "inline";
-  document.getElementById("gameArea").style.width = "535px";
+  document.getElementById("sTime").innerHTML = timer;
+  gameArea();
   startSpeedGame();
+}
+
+function custom() {
+  const elems = ["Score", "Size", "Mist", "Time", "Speed"];
+  var vals = [];
+  for (var i = 0; i < elems.length; i++) {
+    vals.push(document.getElementById("c" + elems[i]).value);
+  }
+  console.log(vals);
+  patLength = vals[0];
+  patSize = vals[1];
+  mistakes = vals[2];
+  timer = vals[3];
+  clueHoldTime = vals[4];
+  counter = timer * millisec;
+  gameArea();
+  console.log(clueHoldTime);
+  startGame();
 }
 
 /* ---- Pattern ---- */
@@ -128,7 +143,7 @@ function stopGame() {
     document.getElementById("wonGame").classList.add("hidden");
     document.getElementById("lostGame").classList.remove("hidden");
   }
-  
+
   allScores.push([progress, mistakesMade, timer, totalWins]);
   console.log(allScores);
   clearInterval(timeOut);
@@ -278,6 +293,18 @@ function diffMenuDefault() {
     menuHide[i].style.display = "none";
   }
 }
+function gameArea() {
+  if (patSize == 4) {
+    document.getElementById("gameArea").style.width = "375px";
+  } else if (patSize == 6) {
+    document.getElementsByClassName("med")[0].style.display = "inline";
+    document.getElementById("gameArea").style.width = "535px";
+  } else {
+    document.getElementsByClassName("med")[0].style.display = "inline";
+    document.getElementsByClassName("hard")[0].style.display = "inline";
+    document.getElementById("gameArea").style.width = "710px";
+  }
+}
 function startDefault() {
   var startShow = document.getElementsByClassName("start");
   for (var i = 0; i < startShow.length; i++) {
@@ -287,7 +314,7 @@ function startDefault() {
   for (var i = 0; i < startHide.length; i++) {
     startHide[i].style.display = "none";
   }
-  var elems = ["goal", "progCount", "totalMis", "missCount", "goal", "time"];
+  const elems = ["goal", "progCount", "totalMis", "missCount", "goal", "time"];
   var vals = [
     patLength,
     progress,
