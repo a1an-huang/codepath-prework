@@ -22,7 +22,7 @@ var mistakesMade = 0;
 function startGame() {
   mistakesMade = 0;
   gamePlaying = true;
-  timeOut = setInterval(timeCounter, 1000);
+  timeOut = setInterval(timeCounter, millisec);
   startDefault();
   generatePattern();
   playClueSequence();
@@ -31,13 +31,15 @@ function startSpeedGame() {
   mistakesMade = 0;
   gamePlaying = true;
   clueHoldTime = 450;
-  timeOut = setInterval(timeCounter, 1000);
+  timeOut = setInterval(timeCounter, millisec);
   speedDefault();
   generatePattern();
   playClueSequence();
 }
 
 /* ---- Difficulty Buttons ---- */
+const millisec = 1000;
+
 function chooseDifficulty() {
   stopGame();
   diffMenuDefault();
@@ -47,7 +49,7 @@ function easy() {
   patLength = 5;
   timer = 45;
   patSize = 4;
-  counter = timer * 1000;
+  counter = timer * millisec;
   mistakes = 4;
   document.getElementById("gameArea").style.width = "375px";
   startGame();
@@ -57,7 +59,7 @@ function med() {
   patLength = 7;
   timer = 60;
   patSize = 6;
-  counter = timer * 1000;
+  counter = timer * millisec;
   mistakes = 3;
   document.getElementsByClassName("med")[0].style.display = "inline";
   document.getElementById("gameArea").style.width = "535px";
@@ -69,7 +71,7 @@ function hard() {
   patLength = 10;
   timer = 80;
   patSize = 8;
-  counter = timer * 1000;
+  counter = timer * millisec;
   mistakes = 2;
   document.getElementsByClassName("med")[0].style.display = "inline";
   document.getElementsByClassName("hard")[0].style.display = "inline";
@@ -81,7 +83,7 @@ function speed() {
   timer = 8;
   patSize = 6;
   progress = patSize - 2;
-  counter = timer * 1000;
+  counter = timer * millisec;
   mistakes = 1;
   document.getElementsByClassName("med")[0].style.display = "inline";
   document.getElementById("gameArea").style.width = "535px";
@@ -113,7 +115,7 @@ function timeCounter() {
   if (timer == 0) {
     stopGame();
   }
-  timeOut = setInterval(timeCounter, 1000);
+  timeOut = setInterval(timeCounter, millisec);
 }
 
 /* ---- Game Controls ----*/
@@ -152,7 +154,7 @@ function prevDiff() {
 }
 function showScores() {
   //Can use this to implement a scoreboard with all values in the future
-  document.getElementById("scoreValues").classList.remove("hidden");
+  document.getElementsByClassName("score")[0].style.display = "inline";
   for (let i = 0; i < allScores.length; i++) {
     var scores = allScores[i];
     document.getElementById("progScore").innerHTML = scores[0];
@@ -164,7 +166,7 @@ function showScores() {
 /* ---- Game Mechanics ----*/
 var clueHoldTime;
 const cluePauseTime = 333;
-var nextClueWaitTime = 1000;
+var nextClueWaitTime = millisec;
 
 function guess(btn) {
   console.log("user guessed: " + btn);

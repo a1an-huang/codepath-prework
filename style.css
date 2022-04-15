@@ -201,7 +201,7 @@ h1 {
 #scoreBoard{
   font-family: "Sigmar One", sans-serif;
   position:fixed;
-  left: 20%;
+  left: 10%;
   top: 40%;
 }
 #scoreValues {
@@ -425,6 +425,7 @@ h1 {
   margin-left: auto;
   margin-right: auto;
   width: 50%;
+  height: 50%;
 }
 #gameArea > button {
   width: 160px;
