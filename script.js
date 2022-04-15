@@ -18,90 +18,86 @@ var progress = 0;
 var guessCounter = 0;
 var mistakesMade = 0;
 
-function startGame() {
+const millisec = 1000;
+
+function startGame(diffVals) {
+  patLength = diffVals[0];
+  patSize = diffVals[1];
+  mistakes = diffVals[2];
+  timer = diffVals[3];
+  clueHoldTime = diffVals[4];
+
   mistakesMade = 0;
   gamePlaying = true;
+  counter = timer * millisec;
   timeOut = setInterval(timeCounter, millisec);
+  
   startDefault();
+  gameArea();
   generatePattern();
   playClueSequence();
 }
-function startSpeedGame() {
+function startSpeedGame(speedVals) {
+  patLength = speedVals[0];
+  patSize = speedVals[1];
+  mistakes = speedVals[2];
+  timer = speedVals[3];
+  progress = speedVals[4];
+  clueHoldTime = speedVals[5];
+
   mistakesMade = 0;
   gamePlaying = true;
-  clueHoldTime = 450;
+  counter = timer * millisec;
+  document.getElementById("sTime").innerHTML = timer;
   timeOut = setInterval(timeCounter, millisec);
+
   speedDefault();
+  gameArea();
   generatePattern();
   playClueSequence();
 }
 
 /* ---- Difficulty Buttons ---- */
-const millisec = 1000;
+var cstmVals = [];
+var isCustom = false;
 
 function chooseDifficulty() {
   stopGame();
   diffMenuDefault();
 }
 function easy() {
-  clueHoldTime = 850;
-  patLength = 5;
-  timer = 45;
-  patSize = 4;
-  counter = timer * millisec;
-  mistakes = 4;
-  gameArea();
-  startGame();
+  isCustom = false;
+  
+  startGame([5, 4, 4, 45, 850]);
 }
-
 function med() {
-  clueHoldTime = 800;
-  patLength = 7;
-  timer = 60;
-  patSize = 6;
-  counter = timer * millisec;
-  mistakes = 3;
-  gameArea();
-  startGame();
+  isCustom = false;
+
+  startGame([7, 6, 3, 60, 800]);
 }
 function hard() {
-  clueHoldTime = 750;
-  patLength = 10;
-  timer = 80;
-  patSize = 8;
-  counter = timer * millisec;
-  mistakes = 2;
-  gameArea();
-  startGame();
+  isCustom = false;
+
+  startGame([10, 8, 2, 80, 750]);
 }
 function speed() {
-  patLength = 6;
-  timer = 8;
-  patSize = 6;
-  progress = patSize - 2;
-  counter = timer * millisec;
-  mistakes = 1;
-  document.getElementById("sTime").innerHTML = timer;
-  gameArea();
-  startSpeedGame();
-}
+  isCustom = false;
 
+  startSpeedGame([6, 6, 1, 8, patSize - 2, 450]);
+}
 function custom() {
   const elems = ["Score", "Size", "Mist", "Time", "Speed"];
-  var vals = [];
+  cstmVals= [];
+  
   for (var i = 0; i < elems.length; i++) {
-    vals.push(document.getElementById("c" + elems[i]).value);
+    cstmVals.push(document.getElementById("c" + elems[i]).value);
   }
-  console.log(vals);
-  patLength = vals[0];
-  patSize = vals[1];
-  mistakes = vals[2];
-  timer = vals[3];
-  clueHoldTime = vals[4];
-  counter = timer * millisec;
-  gameArea();
+  console.log(cstmVals);
+  
+  isCustom = true;
+  
   console.log(clueHoldTime);
-  startGame();
+  startGame(cstmVals);
 }
 
 /* ---- Pattern ---- */
@@ -124,11 +120,14 @@ var counter;
 function timeCounter() {
   clearInterval(timeOut);
   timer -= 1;
+
   document.getElementById("time").innerHTML = timer;
   document.getElementById("sTime").innerHTML = timer;
+
   if (timer == 0) {
     stopGame();
   }
+
   timeOut = setInterval(timeCounter, millisec);
 }
 
@@ -147,6 +146,7 @@ function stopGame() {
   allScores.push([progress, mistakesMade, timer, totalWins]);
   console.log(allScores);
   clearInterval(timeOut);
+
   gamePlaying = false;
   pattern = [];
   progress = 0;
@@ -157,14 +157,16 @@ function stopGame() {
 }
 function prevDiff() {
   stopGame();
-  if (mistakes == 1) {
+  if (isCustom) {
+    startGame(cstmVals);
+  } else if (mistakes == 1) {
     speed();
-  } else if (patSize == 8) {
-    hard();
+  } else if (patSize == 4) {
+    easy();
   } else if (patSize == 6) {
     med();
   } else {
-    easy();
+    hard();
   }
 }
 function showScores() {
@@ -214,6 +216,7 @@ function playClueSequence() {
   for (let i = 0; i <= progress; i++) {
     console.log("play single clue: " + pattern[i] + " in " + delay + "ms");
     setTimeout(playSingleClue, delay, pattern[i]);
+
     delay += clueHoldTime;
     delay += cluePauseTime;
     clueHoldTime -= 50;
@@ -310,10 +313,12 @@ function startDefault() {
   for (var i = 0; i < startShow.length; i++) {
     startShow[i].style.display = "inline";
   }
+
   var startHide = document.getElementsByClassName("startHide");
   for (var i = 0; i < startHide.length; i++) {
     startHide[i].style.display = "none";
   }
+
   const elems = ["goal", "progCount", "totalMis", "missCount", "goal", "time"];
   var vals = [
     patLength,
@@ -323,6 +328,7 @@ function startDefault() {
     patLength,
     timer,
   ];
+
   for (var i = 0; i < elems.length; i++) {
     document.getElementById(elems[i]).innerHTML = vals[i];
   }
@@ -333,6 +339,7 @@ function speedDefault() {
   for (var i = 0; i < speedShow.length; i++) {
     speedShow[i].style.display = "inline";
   }
+
   var speedHide = document.getElementsByClassName("speedHide");
   for (var i = 0; i < speedHide.length; i++) {
     speedHide[i].style.display = "none";
@@ -343,6 +350,7 @@ function stopDefault() {
   for (var i = 0; i < stop.length; i++) {
     stop[i].style.display = "none";
   }
+
   var stopShow = document.getElementsByClassName("stopShow");
   for (var i = 0; i < stopShow.length; i++) {
     stopShow[i].style.display = "inline";
