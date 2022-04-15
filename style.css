@@ -188,25 +188,6 @@ h1 {
   width: 10px;
   height: 10px;
 }
-#prevScores {
-  background: yellow;
-  margin: 2px;
-  padding: 3px 7px;
-  cursor: pointer;
-  font-weight: bold;
-}
-#prevScores:hover {
-  opacity: 75%;
-}
-#scoreBoard{
-  font-family: "Sigmar One", sans-serif;
-  position:fixed;
-  left: 10%;
-  top: 40%;
-}
-#scoreValues {
-  font-size: 14px;
-}
 
 /* ---- Difficulty Menu ---- */
 #diffMenu{
@@ -381,6 +362,33 @@ h1 {
 #mistakeImg {
   width: 18px;
   height: 18px;
+}
+
+/* ---- Score Tracker ---- */
+#prevScores {
+  background: yellow;
+  margin: 2px;
+  padding: 3px 7px;
+  cursor: pointer;
+  font-weight: bold;
+}
+#prevScores:hover {
+  opacity: 75%;
+}
+#scoreBoard{
+  font-family: "Sigmar One", sans-serif;
+  position:fixed;
+  left: 10%;
+  top: 40%;
+}
+#scoreValues {
+  font-size: 14px;
+}
+#totalWins {
+  font-family: "Sigmar One", sans-serif;
+  position:fixed;
+  right: 2%;
+  top: 2%;
 }
 
 /* ---- Timer ---- */

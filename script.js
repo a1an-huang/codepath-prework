@@ -1,7 +1,6 @@
 /* ---- BY ALAN HUANG ---- */
 
 var allScores = [];
-var totalLoses = 0;
 var totalWins = 0;
 
 /* ---- Home Page ---- */
@@ -122,14 +121,15 @@ function timeCounter() {
 function stopGame() {
   if (progress == pattern.length - 1) {
     totalWins++;
+    document.getElementById("winVal").innerHTML = totalWins;
     document.getElementById("lostGame").classList.add("hidden");
     document.getElementById("wonGame").classList.remove("hidden");
   } else {
-    totalLoses++;
     document.getElementById("wonGame").classList.add("hidden");
     document.getElementById("lostGame").classList.remove("hidden");
   }
-  allScores.push([progress, mistakesMade, timer, totalWins, totalLoses]);
+  
+  allScores.push([progress, mistakesMade, timer, totalWins]);
   console.log(allScores);
   clearInterval(timeOut);
   gamePlaying = false;
