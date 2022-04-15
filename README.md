@@ -4,10 +4,10 @@
 
 Submitted by: **Alan Huang**
 
-Time spent: **86** hours spent in total
-![](https://i.imgur.com/CND2ALf.png)
+Time spent: **50** hours spent in total
 
-Link to project: (https://glitch.com/edit/#!/juvenile-polar-tumble)
+
+Link to project: (https://glitch.com/edit/#!/juvenile-polar-tumble) :heart_eyes_cat: 
 ## Required Functionality
 
 The following **required** functionality is complete:
@@ -33,6 +33,7 @@ The following **optional** features are implemented:
 
 The following **additional** features are implemented:
 - [x] Cat Theme :cat: 
+- [x] Rewrite and Organize Code :notebook_with_decorative_cover: 
 - [x] Home Page with Demo Video :house_buildings: 
 - [x] Link to Github repo Onpage :cat2: 
 - [x] Counter for Mistakes, Progress, and Timer :hourglass_flowing_sand: 
@@ -91,28 +92,28 @@ GIFs created with [LiceCap], https://www.cockos.com/licecap/
 
 1. If you used any outside resources to help complete your submission (websites, books, people, etc) list them here.
 
-   : &emsp;HTML/CSS/JS tool: https://www.w3schools.com/,                                          https://stackoverflow.com/, https://devdocs.io/javascript/, https://www.freecodecamp.org/
+    &emsp;HTML/CSS/JS tool: https://www.w3schools.com/,                                          https://stackoverflow.com/, https://devdocs.io/javascript/, https://www.freecodecamp.org/
    
-   : &emsp;Tools: https://hackmd.io/, https://glitch.com/, https://github.com, https://www.adobe.com/creativecloud/
+    &emsp;Tools: https://hackmd.io/, https://glitch.com/, https://github.com, https://www.adobe.com/creativecloud/
    
-   : &emsp;IMG's: https://express.adobe.com/tools/remove-background/#, Google Images, https://www.vecteezy.com/
+    &emsp;IMG's: https://express.adobe.com/tools/remove-background/#, Google Images, https://www.vecteezy.com/
    
 
    
 
 2. What was a challenge you encountered in creating this submission (be specific)? How did you overcome it? (recommended 200 - 400 words)
 
-     : &emsp; A challenge I faced during this submission was cleanly separating the logic between the different parts of my web application. I am using HTML and CSS to structure and style the user interface while using JavaScript to drive the core functionality. While writing JavaScript, I had to take extra precautions to ensure my code was written cleanly. To overcome this challenge the solution I came up with was to modify the DOM by utilizing classes. I assigned a combination of classes to the various elements I wanted to display and hide. I used iteration in order to switch the display property for each of the elements. This was beneficial to me since it cut out a lot of boilerplate and reduced redundancy in my code. Another challenge I faced was with the count-down timer. In the beginning, it was not functioning properly as it was counting down too quickly and going below zero. By researching this problem,  I came across the official documentation for time functions in javascript. Reading through this helped me better understand how to rewrite the timer function to have its functionality align with the specifications. As my skills with these tools increased, so did my confidence. The features I wanted to implement suddenly became possible, and what I envisioned for this project started coming together. Looking back, the main reason I was able to overcome the challenges I faced was because of my perseverance. It stopped me from giving up and allowed me to work through many roadblocks. Going forward, I am more confident in my abilities in creating and launching projects related to web development. I am proud of what I was able to accomplish with this web project and look forward to creating more.
+      &emsp;A challenge I faced during this submission was cleanly separating the logic between the different parts of my web application. I am using HTML and CSS to structure and style the user interface while using JavaScript to drive the core functionality. While writing JavaScript, I had to take extra precautions to ensure my code was written cleanly. To overcome this challenge the solution I came up with was to modify the DOM by utilizing classes. I assigned a combination of classes to the various elements I wanted to display and hide. I used iteration in order to switch the display property for each of the elements. This was beneficial to me since it cut out a lot of boilerplate and reduced redundancy in my code. Another challenge I faced was with the count-down timer. In the beginning, it was not functioning properly as it was counting down too quickly and going below zero. By researching this problem,  I came across the official documentation for time functions in javascript. Reading through this helped me better understand how to rewrite the timer function to have its functionality align with the specifications. As my skills with these tools increased, so did my confidence. The features I wanted to implement suddenly became possible, and what I envisioned for this project started coming together. Looking back, the main reason I was able to overcome the challenges I faced was because of my perseverance. It stopped me from giving up and allowed me to work through many roadblocks. Going forward, I am more confident in my abilities in creating and launching projects related to web development. I am proud of what I was able to accomplish with this web project and look forward to creating more.
 
     
 3. What questions about web development do you have after completing your submission? (recommended 100 - 300 words)
       
-      : &emsp;I learned a lot about web development through this project. Completing this submission made me more intrigued about Web Development. Which brought about more questions. Since I first learned about Salesforce a few years ago, I’ve been interested in how it works. I read a statistic that 95% of the companies in the Fortune 100 run at least one app from the Salesforce AppExchange. I am eager to learn how technologies such as AWS, Heroku, React Postgres, SQL, and MongoDB are used at Salesforce to allow scaling to 150,000+ users. Learning technology has always been a passion of mine, and I’d love to see and learn about the technologies powering the largest CRM in the world. As I continue to expand my knowledge and answer these questions, my ability as a web developer will grow.
+    &emsp;I learned a lot about web development through this project. Completing this submission made me more intrigued about Web Development. Which brought about more questions. Since I first learned about Salesforce a few years ago, I’ve been interested in how it works. I read a statistic that 95% of the companies in the Fortune 100 run at least one app from the Salesforce AppExchange. I am eager to learn how technologies such as AWS, Heroku, React Postgres, SQL, and MongoDB are used at Salesforce to allow scaling to 150,000+ users. Learning technology has always been a passion of mine, and I’d love to see and learn about the technologies powering the largest CRM in the world. As I continue to expand my knowledge and answer these questions, my ability as a web developer will grow.
 
 
 4. If you had a few more hours to work on this project, what would you spend them doing (for example: refactoring certain functions, adding additional features, etc). Be specific. (recommended 100 - 300 words)
   
-      : &emsp;If I had a few more hours to work on this project I would most definitely make the user experience more enjoyable by making the website more interactive. To do this I would redesign the layout of the website and implement more features. One aspect I want to implement is having written rules alongside the demo video so the user does not always have to click on the video to learn the game. I’m also looking to refactor the menu in which I would implement a dropdown menu selection. This dropdown menu would overlap with the current page the user is on, and this would allow the user to pause a game if they are currently in progress. The menu will also be redesigned with a new UI to better match the theme I was going for and make my game look more aesthetically pleasing. My last idea is to improve the tracking feature. Instead of just displaying the total amount of wins and the previous score, I would like to build upon this and build a full-on scoreboard that would track the top 10 scores across the different game modes. This feature would also let the user see their total win-loss ratio across the different games. These changes will slightly alter the way the game is played while still maintaining the original layout of the Light and Sound Memory Game. Although some of these features seem minor, it adds dimension and pushes the game to be more interactive. In my opinion, attention to detail is very important, since it can make or break the overall user experience.	
+      &emsp;If I had a few more hours to work on this project I would most definitely make the user experience more enjoyable by making the website more interactive. To do this I would redesign the layout of the website and implement more features. One aspect I want to implement is having written rules alongside the demo video so the user does not always have to click on the video to learn the game. I’m also looking to refactor the menu in which I would implement a dropdown menu selection. This dropdown menu would overlap with the current page the user is on, and this would allow the user to pause a game if they are currently in progress. The menu will also be redesigned with a new UI to better match the theme I was going for and make my game look more aesthetically pleasing. My last idea is to improve the tracking feature. Instead of just displaying the total amount of wins and the previous score, I would like to build upon this and build a full-on scoreboard that would track the top 10 scores across the different game modes. This feature would also let the user see their total win-loss ratio across the different games. These changes will slightly alter the way the game is played while still maintaining the original layout of the Light and Sound Memory Game. Although some of these features seem minor, it adds dimension and pushes the game to be more interactive. In my opinion, attention to detail is very important, since it can make or break the overall user experience.	
 
 
 
