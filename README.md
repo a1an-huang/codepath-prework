@@ -78,13 +78,13 @@ If you recorded multiple GIFs for all the implemented features, you can add them
 
     Previous Score Button (Only Shows Previous Score)
 
-![](https://i.imgur.com/rDrF4fb.gif)
+![](https://i.imgur.com/fgyN1Ke.gif)
 
     Losing by Running out of Time, Total Win Counter
 
 ![](https://i.imgur.com/H8EV1DH.gif)
 
-    Winning and access to Github repository
+    Winning Text and access to Github Repository
 
 ![](https://i.imgur.com/eHM36F1.gif)
 
