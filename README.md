@@ -33,7 +33,7 @@ The following **optional** features are implemented:
 
 The following **additional** features are implemented:
 - [x] Cat Theme :cat: 
-- [x] Rewrite and Organize Code :notebook_with_decorative_cover: 
+- [x] Rewrote and Organized Code :notebook_with_decorative_cover: 
 - [x] Home Page with Demo Video :house_buildings: 
 - [x] Link to Github repo Onpage :cat2: 
 - [x] Counter for Mistakes, Progress, and Timer :hourglass_flowing_sand: 
@@ -49,40 +49,41 @@ If you recorded multiple GIFs for all the implemented features, you can add them
 
 
 
-    Cat Edition! Front Page, Demo Video, Main Menu and PAWWSS
-![](https://i.imgur.com/V1j7IEi.gif)
+    Cat Edition! Landing Page, Demo Video, Game Menu and PAWWSS
+![](https://i.imgur.com/hBR2MXA.gif)
 
-    Legacy Mode
-![](https://i.imgur.com/PaJF2IR.gif)
+    Legacy Mode, Homage to the original game design
+![](https://i.imgur.com/PMKejW4.gif)
 
-    Easy Mode, Game Functionality and Counter Bar
+    Easy Mode :3 Counter Bar & increase in speed per round
     
-![](https://i.imgur.com/spd5lEs.gif)
+![](https://i.imgur.com/KFjawHf.gif)
+ 
 
-
-    Medium, Hard Mode,Stop Button, Reset Feature, Timer and Change in Speed 
-
-![](https://i.imgur.com/gNa2Kzi.gif)
+    Medium, Hard Mode, Stop Button, Reset Feature, and change in layout :Q
+![](https://i.imgur.com/247KtC6.gif)
     
+    Speed Mode!!! 1 Round, 1 Mistake, Faster ClueHold Times, Less Time :O
+
+![](https://i.imgur.com/BrUqjl2.gif)
+
+    Custom Mode :D Choose your own Pattern Size, Progress, Mistakes, and Time
     
-    Showing Previous Score
-![](https://i.imgur.com/zLr2c6S.gif)
+![](https://i.imgur.com/KirhrEi.gif)
 
-    New Game Mode!!! Speed Round!!!! I'm too slow D:
+    Previous Score Button (Only Shows Previous Score) :P
+    
+![](https://i.imgur.com/TW7il9I.gif)
 
-
-![](https://i.imgur.com/7ikIcTX.gif)
-
-
-    Losing by running out of time and mistakes. 7 lives to go <3
-
-![](https://i.imgur.com/iMNfyxT.gif)
+    Losing by Running out of Time, Total Win Counter :(
+    
+![](https://i.imgur.com/PYfbHG0.gif)
 
 
     Winning and access to github repository. Meoww!:D
     
+![](https://i.imgur.com/eHM36F1.gif)
 
-![](https://i.imgur.com/J1tl289.gif)
 
 
 GIFs created with [LiceCap], https://www.cockos.com/licecap/
