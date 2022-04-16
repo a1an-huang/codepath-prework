@@ -328,7 +328,7 @@ h1 {
 #cstmTxt{
   color:black;
   background:salmon;
-  position:absolute;
+  position:block;
 }
 #home {
   font-family: "Sigmar One", sans-serif;
