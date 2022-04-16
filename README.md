@@ -71,7 +71,8 @@ If you recorded multiple GIFs for all the implemented features, you can add them
 
     Custom Mode :D Choose your own Pattern Size, Progress, Mistakes, and Time
     
-![](https://i.imgur.com/dtet8AS.gif)
+![](https://i.imgur.com/KzbhLlj.gif)
+
 
 
     Previous Score Button (Only Shows Previous Score) :P
@@ -80,7 +81,7 @@ If you recorded multiple GIFs for all the implemented features, you can add them
 
     Losing by Running out of Time, Total Win Counter :( 
     
-![](https://i.imgur.com/0Q2EGsa.gif)
+![](https://i.imgur.com/H8EV1DH.gif)
 
 
     Winning and access to github repository. Meoww!:D
