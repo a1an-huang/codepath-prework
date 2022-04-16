@@ -50,9 +50,11 @@ If you recorded multiple GIFs for all the implemented features, you can add them
 
 
     Cat Edition! Landing Page, Demo Video, Game Menu and PAWWSS
+    
 ![](https://i.imgur.com/hBR2MXA.gif)
 
     Legacy Mode, Homage to the original game design
+    
 ![](https://i.imgur.com/PMKejW4.gif)
 
     Easy Mode :3 Counter Bar & increase in speed per round
@@ -76,7 +78,7 @@ If you recorded multiple GIFs for all the implemented features, you can add them
 
     Previous Score Button (Only Shows Previous Score) :P
     
-![](https://i.imgur.com/6pItevp.gif)
+![](https://i.imgur.com/rDrF4fb.gif)
 
     Losing by Running out of Time, Total Win Counter :( 
     
