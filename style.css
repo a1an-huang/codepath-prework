@@ -150,7 +150,6 @@ h1 {
 #demoVid {
   height: 310px;
   width: 435px;
-  
 }
 
 /* ---- Control Bar ---- */
@@ -158,7 +157,7 @@ h1 {
   text-align: center;
   align-items: center;
   justify-content: center;
-  left:50%;
+  left: 50%;
 }
 #endBtn {
   background: red;
@@ -190,8 +189,8 @@ h1 {
 }
 
 /* ---- Difficulty Menu ---- */
-#diffMenu{
-  text-align:center;
+#diffMenu {
+  text-align: center;
   margin: 0;
 }
 #gameMenu {
@@ -207,7 +206,6 @@ h1 {
   align-items: center;
   margin: 0 auto;
   position: relative;
-
 }
 #easy {
   font-family: "Sigmar One", sans-serif;
@@ -225,7 +223,6 @@ h1 {
   top: 25%;
   left: 50%;
   transform: translate(-50%, -50%);
-  
 }
 #easy:hover {
   background-color: green;
@@ -233,7 +230,6 @@ h1 {
   color: white;
   font-size: 18px;
   font-weight: normal;
-  
 }
 #med {
   font-family: "Sigmar One", sans-serif;
@@ -303,11 +299,36 @@ h1 {
   font-weight: normal;
   display: inline;
 }
-#customMenu{
+#customMenu {
   font-family: "Sigmar One", sans-serif;
   position: absolute;
   top: 40%;
   left: 20%;
+}
+#customBtn {
+  font-family: "Sigmar One", sans-serif;
+  border: 2px solid black;
+  background-color: salmon;
+  color: black;
+  border-color: black;
+  color: black;
+  padding: 9px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: bold;
+  display: block;
+}
+#customBtn:hover {
+  background-color: salmon;
+  border-color: black;
+  color: white;
+  font-size: 18px;
+  font-weight: normal;
+}
+#cstmTxt{
+  color:black;
+  background:salmon;
+  position:absolute;
 }
 #home {
   font-family: "Sigmar One", sans-serif;
@@ -327,9 +348,81 @@ h1 {
   opacity: 75%;
 }
 
+/* ---- Select Button ---- */
+#cScore {
+  background: none;
+  border: none;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  font-weight: bold;
+  color: black;
+  background-color: salmon;
+}
+#cScore:hover,
+#cScore:focus {
+  color: white;
+}
+#cSize {
+  background: none;
+  border: none;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  font-weight: bold;
+  color: black;
+  background-color: salmon;
+}
+#cSize:hover,
+#cSize:focus {
+  color: white;
+}
+#cMist {
+  background: none;
+  border: none;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  font-weight: bold;
+  color: black;
+  background-color: salmon;
+}
+#cMist:hover,
+#cMist:focus {
+  color: white;
+}
+#cTime {
+  background: none;
+  border: none;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  font-weight: bold;
+  color: black;
+  background-color: salmon;
+}
+#cTime:hover,
+#cTime:focus {
+  color: white;
+}
+#cSpeed {
+  background: none;
+  border: none;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  font-weight: bold;
+  color: black;
+  background-color: salmon;
+}
+#cSpeed:hover,
+#cSpeed:focus {
+  color: white;
+}
+
 /* ---- Menu Button ----*/
 #returnMenu {
-  text-align:center;
+  text-align: center;
 }
 #menu {
   background: none;
@@ -339,7 +432,7 @@ h1 {
   cursor: pointer;
   font-weight: bold;
   color: white;
-  font-size:15px;
+  font-size: 15px;
 }
 #menu:hover {
   opacity: 75%;
@@ -361,7 +454,7 @@ h1 {
   width: 17px;
   height: 17px;
 }
-#mistakes{
+#mistakes {
   margin: 0 auto;
   text-align: center;
 }
@@ -381,9 +474,9 @@ h1 {
 #prevScores:hover {
   opacity: 75%;
 }
-#scoreBoard{
+#scoreBoard {
   font-family: "Sigmar One", sans-serif;
-  position:fixed;
+  position: fixed;
   left: 10%;
   top: 40%;
 }
@@ -392,7 +485,7 @@ h1 {
 }
 #totalWins {
   font-family: "Sigmar One", sans-serif;
-  position:fixed;
+  position: fixed;
   right: 2%;
   top: 2%;
 }
@@ -401,7 +494,7 @@ h1 {
 #speedTimer {
   font-family: "Sigmar One", sans-serif;
   margin: 0 auto;
-  
+
   text-align: center;
 }
 #timerImg {
@@ -414,14 +507,16 @@ h1 {
 }
 
 /* ---- Result Text ---- */
-#resultText{
-  text-align:center;
+#resultText {
+  text-align: center;
 }
 #wonGame {
+  text-shadow: 2px 2px 2px black;
   color: green;
   font-weight: 900;
 }
 #lostGame {
+  text-shadow: 2px 2px 2px black;
   color: red;
   font-weight: 900;
 }
@@ -638,7 +733,7 @@ h1 {
 #github:hover {
   opacity: 75%;
 }
-#infoText{
+#infoText {
   position: fixed;
   right: 1%;
   bottom: 0;

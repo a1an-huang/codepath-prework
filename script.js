@@ -152,7 +152,6 @@ function stopGame() {
   progress = 0;
   mistakesMade = 0;
   guessCounter = 0;
-  clueHoldTime = 850;
   stopDefault();
 }
 function prevDiff() {
