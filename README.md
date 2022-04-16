@@ -62,7 +62,7 @@ If you recorded multiple GIFs for all the implemented features, you can add them
 
     Medium, Hard Mode, Stop Button, Reset Feature, and change in layout :Q
 
-![](https://i.imgur.com/zeGlfO8.gif)
+![](https://i.imgur.com/eGSLBJf.gif)
 
     Speed Mode!!! 1 Round, 1 Mistake, Faster ClueHold Times, Less Time :O
 
