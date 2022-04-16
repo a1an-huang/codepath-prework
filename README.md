@@ -56,11 +56,11 @@ If you recorded multiple GIFs for all the implemented features, you can add them
 
 ![](https://i.imgur.com/PMKejW4.gif)
 
-    Easy Mode :3 Counter Bar & increase in speed per round
+    Easy Mode, Counter Bar & increase in speed per round
 
 ![](https://i.imgur.com/g6OAQe0.gif)
 
-    Medium Mode, Stop Button, and change in layout  :Q
+    Medium Mode, Stop Button, and change in layout
 
 ![](https://i.imgur.com/ZmT6mgu.gif)
 
@@ -84,21 +84,22 @@ If you recorded multiple GIFs for all the implemented features, you can add them
 
 ![](https://i.imgur.com/H8EV1DH.gif)
 
-    Winning and access to github repository. Meoww!:D
+    Winning and access to github repository.:D
 
 ![](https://i.imgur.com/eHM36F1.gif)
 
-GIFs created with [LiceCap], https://www.cockos.com/licecap/
+GIFs created with [LiceCap](https://www.cockos.com/licecap/)
 
 ## Reflection Questions
 
 1. If you used any outside resources to help complete your submission (websites, books, people, etc) list them here.
 
-   &emsp;HTML/CSS/JS tool: https://www.w3schools.com/, https://stackoverflow.com/, https://devdocs.io/javascript/, https://www.freecodecamp.org/
+   &emsp;HTML/CSS/JS tool: [StackOverflow](https://stackoverflow.com/),
+   [MDN](https://developer.mozilla.org/en-US/), [FreeCodeCamp](https://www.freecodecamp.org/)
 
-   &emsp;Tools: https://hackmd.io/, https://glitch.com/, https://github.com, https://www.adobe.com/creativecloud/
+   &emsp;Tools: [HackMD](https://hackmd.io/), [Glitch](https://glitch.com/), [GitHub](https://github.com)
 
-   &emsp;IMG's: https://express.adobe.com/tools/remove-background/#, Google Images, https://www.vecteezy.com/
+   &emsp;IMG's: [Adobe Creative Cloud](https://express.adobe.com/tools/), [Google Images](https://images.google.com/)
 
 2. What was a challenge you encountered in creating this submission (be specific)? How did you overcome it? (recommended 200 - 400 words)
 
