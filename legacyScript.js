@@ -33,7 +33,6 @@ var pattern = [];
 const patLen = 5;
 
 function generatePattern() {
-  //generates 5 random patterns
   for (let i = 0; i < patLen; i++) {
     pattern.push(Math.floor(Math.random() * 4) + 1);
   }
@@ -50,31 +49,24 @@ function guess(btn) {
   if (!gamePlaying) {
     return;
   }
-  //ends game if the btn clicked is not equal to the
-  //button in the pattern array at index guessCounter
   if (btn != pattern[guessCounter]) {
     stopGame();
   }
-  //checks if turn is over
   if (guessCounter == progress) {
-    //win game since its last in the sequence
     if (progress == patLen) {
       stopGame();
     }
-    //if it is not last turn continue sequence
     progress++;
     playClueSequence();
   } else {
-    //incr guessCounter counter
     guessCounter++;
   }
 }
 function playClueSequence() {
   guessCounter = 0;
   context.resume();
-  let delay = nextClueWaitTime; //set delay to initial wait time
+  let delay = nextClueWaitTime;
   for (let i = 0; i <= progress; i++) {
-    // for each clue that is revealed so far
     console.log("play single clue: " + pattern[i] + " in " + delay + "ms");
     setTimeout(playSingleClue, delay, pattern[i]); // set a timeout to play that clue
     delay += clueHoldTime;
