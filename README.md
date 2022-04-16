@@ -57,13 +57,13 @@ If you recorded multiple GIFs for all the implemented features, you can add them
 
     Easy Mode :3 Counter Bar & increase in speed per round
     
-
- ![](https://i.imgur.com/ag3RVxq.gif)
+![](https://i.imgur.com/Bs3fUIq.gif)
 
 
     Medium, Hard Mode, Stop Button, Reset Feature, and change in layout :Q
     
-![](https://i.imgur.com/PzrEobH.gif)
+![](https://i.imgur.com/TAB7E4a.gif)
+
     
     Speed Mode!!! 1 Round, 1 Mistake, Faster ClueHold Times, Less Time :O
 
@@ -71,13 +71,12 @@ If you recorded multiple GIFs for all the implemented features, you can add them
 
     Custom Mode :D Choose your own Pattern Size, Progress, Mistakes, and Time
     
-![](https://i.imgur.com/KzbhLlj.gif)
-
+![](https://i.imgur.com/rWiBNqu.gif)
 
 
     Previous Score Button (Only Shows Previous Score) :P
     
-![](https://i.imgur.com/2WV24pu.gif)
+![](https://i.imgur.com/6pItevp.gif)
 
     Losing by Running out of Time, Total Win Counter :( 
     
