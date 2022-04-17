@@ -94,7 +94,7 @@ GIFs created with [LiceCap](https://www.cockos.com/licecap/)
 
 1. If you used any outside resources to help complete your submission (websites, books, people, etc) list them here.
 
-   &emsp; :spiral_note_pad: HTML/CSS/JS tool: [StackOverflow](https://stackoverflow.com/),
+   &emsp; :notebook: HTML/CSS/JS tool: [StackOverflow](https://stackoverflow.com/),
    [MDN](https://developer.mozilla.org/en-US/), [FreeCodeCamp](https://www.freecodecamp.org/)
 
    &emsp; :hammer_and_wrench: Tools: [HackMD](https://hackmd.io/), [Glitch](https://glitch.com/), [GitHub](https://github.com)
@@ -115,7 +115,7 @@ GIFs created with [LiceCap](https://www.cockos.com/licecap/)
 
 ## Interview Recording URL Link
 
-[:movie_camera: My 5-Minute Interview Recording](your-link-here)
+[:movie_camera: My 5-Minute Interview Recording](https://www.loom.com/share/7cdd275056ba4f28b1a038a1ed134941)
 
 ## License
 
