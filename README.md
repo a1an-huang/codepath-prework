@@ -115,7 +115,7 @@ GIFs created with [LiceCap](https://www.cockos.com/licecap/)
 
 ## Interview Recording URL Link
 
-[:movie_camera: My 5-Minute Interview Recording](https://www.loom.com/share/7cdd275056ba4f28b1a038a1ed134941)
+[:movie_camera: My 5-Minute Interview Recording](https://www.loom.com/share/edcfff2ee7814fb68fbbec9c0b5a1204)
 
 ## License
 
