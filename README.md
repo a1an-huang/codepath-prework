@@ -34,7 +34,7 @@ The following **optional** features are implemented:
 The following **additional** features are implemented:
 
 - [x] Cat Theme :cat:
-- [x] Rewrote and Organized Code :notebook_with_decorative_cover:
+- [x] Organized Code :notebook_with_decorative_cover:
 - [x] Home Page with Demo Video :house:
 - [x] Link to Github repo Onpage :cat2:
 - [x] Counter for Mistakes, Progress, and Timer :hourglass_flowing_sand:
