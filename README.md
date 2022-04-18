@@ -35,7 +35,7 @@ The following **additional** features are implemented:
 
 - [x] Cat Theme :cat:
 - [x] Rewrote and Organized Code :notebook_with_decorative_cover:
-- [x] Home Page with Demo Video :house_buildings:
+- [x] Home Page with Demo Video :house:
 - [x] Link to Github repo Onpage :cat2:
 - [x] Counter for Mistakes, Progress, and Timer :hourglass_flowing_sand:
 - [x] Previous Score & Total Wins :100:
@@ -48,7 +48,7 @@ The following **additional** features are implemented:
 
 If you recorded multiple GIFs for all the implemented features, you can add them here:
 
-    Cat Edition! Landing Page, Demo Video, Game Menu and PAWWSS
+    Cat Edition! Landing Page, Demo Video, and Game Menu
 
 ![](https://i.imgur.com/hBR2MXA.gif)
 
@@ -56,15 +56,19 @@ If you recorded multiple GIFs for all the implemented features, you can add them
 
 ![](https://i.imgur.com/PMKejW4.gif)
 
-    Easy Mode :3 Counter Bar & increase in speed per round
+    Easy Mode, Counter Bar & increase in speed per round
 
 ![](https://i.imgur.com/g6OAQe0.gif)
 
-    Medium, Hard Mode, Stop Button, Reset Feature, and change in layout :Q
+    Medium Mode, Stop Button, and change in layout
 
-![](https://i.imgur.com/zeGlfO8.gif)
+![](https://i.imgur.com/ZmT6mgu.gif)
 
-    Speed Mode!!! 1 Round, 1 Mistake, Faster ClueHold Times, Less Time :O
+    Hard Mode, Reset Button, and change in layout
+
+![](https://i.imgur.com/iDLA5Ro.gif)
+
+    Speed Mode!!! 1 Round, 1 Mistake, Faster ClueHold Times, Less Time
 
 ![](https://i.imgur.com/BrUqjl2.gif)
 
@@ -72,29 +76,30 @@ If you recorded multiple GIFs for all the implemented features, you can add them
 
 ![](https://i.imgur.com/rWiBNqu.gif)
 
-    Previous Score Button (Only Shows Previous Score) :P
+    Previous Score Button (Only Shows Previous Score)
 
-![](https://i.imgur.com/rDrF4fb.gif)
+![](https://i.imgur.com/fgyN1Ke.gif)
 
-    Losing by Running out of Time, Total Win Counter :(
+    Losing by Running out of Time, Total Win Counter
 
 ![](https://i.imgur.com/H8EV1DH.gif)
 
-    Winning and access to github repository. Meoww!:D
+    Winning Text and access to Github Repository
 
 ![](https://i.imgur.com/eHM36F1.gif)
 
-GIFs created with [LiceCap], https://www.cockos.com/licecap/
+GIFs created with [LiceCap](https://www.cockos.com/licecap/)
 
 ## Reflection Questions
 
 1. If you used any outside resources to help complete your submission (websites, books, people, etc) list them here.
 
-   &emsp;HTML/CSS/JS tool: https://www.w3schools.com/, https://stackoverflow.com/, https://devdocs.io/javascript/, https://www.freecodecamp.org/
+   &emsp; :notebook: HTML/CSS/JS tool: [StackOverflow](https://stackoverflow.com/),
+   [MDN](https://developer.mozilla.org/en-US/), [FreeCodeCamp](https://www.freecodecamp.org/)
 
-   &emsp;Tools: https://hackmd.io/, https://glitch.com/, https://github.com, https://www.adobe.com/creativecloud/
+   &emsp; :hammer_and_wrench: Tools: [HackMD](https://hackmd.io/), [Glitch](https://glitch.com/), [GitHub](https://github.com)
 
-   &emsp;IMG's: https://express.adobe.com/tools/remove-background/#, Google Images, https://www.vecteezy.com/
+   &emsp; :camera: IMG's: [Adobe Creative Cloud](https://express.adobe.com/tools/), [Google Images](https://images.google.com/)
 
 2. What was a challenge you encountered in creating this submission (be specific)? How did you overcome it? (recommended 200 - 400 words)
 
@@ -110,7 +115,7 @@ GIFs created with [LiceCap], https://www.cockos.com/licecap/
 
 ## Interview Recording URL Link
 
-[My 5-minute Interview Recording](your-link-here)
+[:movie_camera: My 5-Minute Interview Recording](https://www.loom.com/share/7cdd275056ba4f28b1a038a1ed134941)
 
 ## License
 

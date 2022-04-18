@@ -474,11 +474,25 @@ h1 {
 #prevScores:hover {
   opacity: 75%;
 }
+#prevTxt{
+  color:black;
+  background:yellow;
+  position:block;
+}
 #scoreBoard {
   font-family: "Sigmar One", sans-serif;
   position: fixed;
   left: 10%;
   top: 40%;
+}
+#progScore{
+  color:yellow
+}
+#misScore{
+  color:yellow
+}
+#timeScore{
+  color:yellow
 }
 #scoreValues {
   font-size: 14px;
