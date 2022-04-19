@@ -4,7 +4,7 @@
 
 Submitted by: **Alan Huang**
 
-Time spent: **50** hours spent in total
+Time spent: **60** hours spent in total
 
 Link to project: (https://glitch.com/edit/#!/juvenile-polar-tumble) :heart_eyes_cat:
 
