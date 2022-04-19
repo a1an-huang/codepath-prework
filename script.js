@@ -84,7 +84,7 @@ function hard() {
 function speed() {
   isCustom = false;
 
-  startSpeedGame([6, 6, 1, 8, 5, 450]);
+  startSpeedGame([6, 6, 1, 8, 4, 450]);
 }
 function custom() {
   const elems = ["Score", "Size", "Mist", "Time", "Speed"];
