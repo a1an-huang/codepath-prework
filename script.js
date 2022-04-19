@@ -1,5 +1,6 @@
 /* ---- BY ALAN HUANG ---- */
 
+/* ---- Tracking Variables ----*/
 var allScores = [];
 var totalWins = 0;
 
@@ -83,7 +84,7 @@ function hard() {
 function speed() {
   isCustom = false;
 
-  startSpeedGame([6, 6, 1, 8, patSize - 2, 450]);
+  startSpeedGame([6, 6, 1, 8, 5, 450]);
 }
 function custom() {
   const elems = ["Score", "Size", "Mist", "Time", "Speed"];
