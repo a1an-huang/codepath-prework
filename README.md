@@ -48,47 +48,47 @@ The following **additional** features are implemented:
 
 If you recorded multiple GIFs for all the implemented features, you can add them here:
 
-    Cat Edition! Landing Page, Demo Video, and Game Menu
+    Cat Edition! Landing Page, Demo Video (Please Pause Video Before Clicking Start), and Game Menu with 3 Difficulties, Speed Mode & Custom Mode.
 
 ![](https://i.imgur.com/hBR2MXA.gif)
 
-    Legacy Mode, Homage to the original game design
+    Legacy Mode (Original Game Design from Demo), Homage to the original game design
 
 ![](https://i.imgur.com/PMKejW4.gif)
 
-    Easy Mode, Counter Bar & Increase in speed per round
+    Easy Mode, Game Layour for 4 Buttons, Counter Bar (Progress, Mistakes Used, Time Left) & Decrease in clueHoldTime Speed per round.
 
 ![](https://i.imgur.com/g6OAQe0.gif)
 
-    Medium Mode, Stop Button, and change in Game Layout
+    Medium Mode, Game Layout for 6 Buttons & Stop Button (Loses & Ends Game).
 
 ![](https://i.imgur.com/ZmT6mgu.gif)
 
-    Hard Mode, Reset Button, and change in Game Layout
+    Hard Mode, Game Layout for 8 Buttons & Reset Button(Resets Game).
 
 ![](https://i.imgur.com/iDLA5Ro.gif)
 
-    Speed Mode!!! 1 Round, 1 Mistake, Faster ClueHold Times, Less Time
+    Speed Mode!!! 1 Round, 1 Mistake, Fast ClueHold Times & only 8 seconds to see and playback pattern.
 
 ![](https://i.imgur.com/BrUqjl2.gif)
 
-    Custom Mode :D Choose your own Pattern Size, Progress, Mistakes, and Time
+    Custom Mode :D Choose your own Progress, Pattern Size, Mistakes, Speed & Time from provided options.
 
 ![](https://i.imgur.com/rWiBNqu.gif)
 
-    Previous Score Button (Only Shows Previous Score)
+    Previous Score Button (Only Shows Previous Score, {Points Scored, Mistakes Used , Time Left})
 
 ![](https://i.imgur.com/fgyN1Ke.gif)
 
-    Losing by Mistakes.(Easy: On 4th Mistake, Medium: On 3rd Mistake, Hard: On 2nd Mistake, Speed: On First Mistake)
+    Losing by Mistakes (Easy: On 4th Mistake, Medium: On 3rd Mistake, Hard: On 2nd Mistake, Speed: On First Mistake)
     
 ![](https://user-images.githubusercontent.com/98438095/164167582-af8b0e22-084d-45e6-ab6c-cd5edbe640f2.gif)
 
-    Losing by Running out of Time, Total Win Counter
+    Losing by Running out of Time, Winning & Increase in Total Win Counter (Top Right).
 
 ![](https://i.imgur.com/H8EV1DH.gif)
 
-    Winning Text and Clickable Icon with acess to Github Repository
+    Winning Text & Clickable icon with access to Github Repository (Bottom Left).
 
 ![](https://i.imgur.com/eHM36F1.gif)
 
