@@ -79,7 +79,7 @@ If you recorded multiple GIFs for all the implemented features, you can add them
 
 ![](https://i.imgur.com/rWiBNqu.gif)
 
-    Previous Score Button (Only Shows Previous Score, {Points Scored, Mistakes Used , Time Left})
+    Previous Score Button (Only Shows Previous Score, {Points Scored, Mistakes Used, Time Left})
 
 ![](https://i.imgur.com/fgyN1Ke.gif)
 
@@ -124,6 +124,9 @@ GIFs created with [LiceCap](https://www.cockos.com/licecap/)
 ## Interview Recording URL Link
 
 [:movie_camera: My 5-Minute Interview Recording](https://www.loom.com/share/edcfff2ee7814fb68fbbec9c0b5a1204)
+
+## Thank you for taking your time to review my work and have a nice rest of your day.
+
 
 ## License
 
