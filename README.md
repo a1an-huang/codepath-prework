@@ -81,8 +81,8 @@ If you recorded multiple GIFs for all the implemented features, you can add them
 ![](https://i.imgur.com/fgyN1Ke.gif)
 
     Losing by Mistakes.(Easy: On 4th Mistake, Medium: On 3rd Mistake, Hard: On 2nd Mistake)
-
-![](https://i.imgur.com/T6DVyIB.gif)
+    
+![](https://i.imgur.com/47CgCso.gif)
 
     Losing by Running out of Time, Total Win Counter
 
