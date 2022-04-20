@@ -125,8 +125,7 @@ GIFs created with [LiceCap](https://www.cockos.com/licecap/)
 
 [:movie_camera: My 5-Minute Interview Recording](https://www.loom.com/share/edcfff2ee7814fb68fbbec9c0b5a1204)
 
-## Thank you for taking your time to review my work, and Have a great day.
-
+## Thank you for taking your time to review my work and have a great rest of your day!
 
 ## License
 
