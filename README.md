@@ -70,7 +70,7 @@ If you recorded multiple GIFs for all the implemented features, you can add them
 
 ![](https://i.imgur.com/iDLA5Ro.gif)
 
-    Speed Mode!!! 1 Round, 1 Mistake, Fast ClueHold Times & only 8 seconds to see and playback pattern.
+    Speed Mode!!! 1 Round, 1 Mistake, Fast ClueHold Times & only 8 seconds to see, hear and playback pattern.
 
 ![](https://i.imgur.com/BrUqjl2.gif)
 
