@@ -48,15 +48,17 @@ The following **additional** features are implemented:
 
 If you recorded multiple GIFs for all the implemented features, you can add them here:
 
-    Cat Edition! Landing Page, Demo Video (Please Pause Video Before Clicking Start), and Game Menu with 3 Difficulties, Speed Mode & Custom Mode.
+    Cat Edition! Landing Page, Demo Video (Please Pause Video Before Clicking Start),
+    Game Menu with 3 Difficulties, Speed Mode & Custom Mode.
 
 ![](https://i.imgur.com/hBR2MXA.gif)
 
-    Legacy Mode (Original Game Design from Demo), Homage to the original game design
+    Legacy Mode (Original Game Design from Demo), Homage to the Original Game Design
 
 ![](https://i.imgur.com/PMKejW4.gif)
 
-    Easy Mode, Game Layour for 4 Buttons, Counter Bar (Progress, Mistakes Used, Time Left) & Decrease in clueHoldTime Speed per round.
+    Easy Mode, Game Layour for 4 Buttons, Counter Bar (Progress, Mistakes Used, Time Left) 
+    & Decrease in clueHoldTime Speed per round.
 
 ![](https://i.imgur.com/g6OAQe0.gif)
 
@@ -80,7 +82,8 @@ If you recorded multiple GIFs for all the implemented features, you can add them
 
 ![](https://i.imgur.com/fgyN1Ke.gif)
 
-    Losing by Mistakes (Easy: On 4th Mistake, Medium: On 3rd Mistake, Hard: On 2nd Mistake, Speed: On First Mistake)
+    Losing by Mistakes (Easy: On 4th Mistake, Medium: On 3rd Mistake, 
+    Hard: On 2nd Mistake, Speed: On First Mistake)
     
 ![](https://user-images.githubusercontent.com/98438095/164167582-af8b0e22-084d-45e6-ab6c-cd5edbe640f2.gif)
 
