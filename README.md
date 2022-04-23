@@ -43,7 +43,7 @@ The following **additional** features are implemented:
 - [x] Speed Mode (One Life, 1 Round with 6 Patterns) :fast_forward:
 - [x] Legacy Mode (Original Game Mode) :old_key:
 - [x] Custom Mode ( User gets to choose Score, Pattern size, Mistakes, Timer and Speed) :customs:
-- [x] Custom Sounds for Winning and Losing
+- [x] Custom Sounds for Winning and Losing :musical_keyboard: 
 
 ## Video Walkthrough (GIF)
 
@@ -108,7 +108,7 @@ GIFs created with [LiceCap](https://www.cockos.com/licecap/)
 
    &emsp; :hammer_and_wrench: Tools: [HackMD](https://hackmd.io/), [Glitch](https://glitch.com/), [GitHub](https://github.com)
 
-   &emsp; :camera: IMG's: [Adobe Creative Cloud](https://express.adobe.com/tools/), [Google Images](https://images.google.com/)
+   &emsp; :camera: IMG's & Sound: [Adobe Creative Cloud](https://express.adobe.com/tools/), [Google Images](https://images.google.com/), [MixKit](https://mixkit.co/)
 
 2. What was a challenge you encountered in creating this submission (be specific)? How did you overcome it? (recommended 200 - 400 words)
 
