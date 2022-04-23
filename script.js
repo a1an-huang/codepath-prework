@@ -32,7 +32,7 @@ function startGame(diffVals) {
   gamePlaying = true;
   counter = timer * millisec;
   timeOut = setInterval(timeCounter, millisec);
-  
+
   startDefault();
   gameArea();
   generatePattern();
@@ -68,18 +68,18 @@ function chooseDifficulty() {
 }
 function easy() {
   isCustom = false;
-  
+
   startGame([5, 4, 4, 45, 850]);
 }
 function med() {
   isCustom = false;
 
-  startGame([7, 6, 3, 60, 800]);
+  startGame([7, 6, 3, 60, 750]);
 }
 function hard() {
   isCustom = false;
 
-  startGame([10, 8, 2, 80, 750]);
+  startGame([10, 8, 2, 80, 650]);
 }
 function speed() {
   isCustom = false;
@@ -88,15 +88,15 @@ function speed() {
 }
 function custom() {
   const elems = ["Score", "Size", "Mist", "Time", "Speed"];
-  cstmVals= [];
-  
+  cstmVals = [];
+
   for (var i = 0; i < elems.length; i++) {
     cstmVals.push(document.getElementById("c" + elems[i]).value);
   }
   console.log(cstmVals);
-  
+
   isCustom = true;
-  
+
   console.log(clueHoldTime);
   startGame(cstmVals);
 }
@@ -135,15 +135,10 @@ function timeCounter() {
 /* ---- Game Controls ----*/
 function stopGame() {
   if (progress == pattern.length - 1) {
-    totalWins++;
-    document.getElementById("winVal").innerHTML = totalWins;
-    document.getElementById("lostGame").classList.add("hidden");
-    document.getElementById("wonGame").classList.remove("hidden");
+    stopWin();
   } else {
-    document.getElementById("wonGame").classList.add("hidden");
-    document.getElementById("lostGame").classList.remove("hidden");
+    stopLose();
   }
-
   allScores.push([progress, mistakesMade, timer, totalWins]);
   console.log(allScores);
   clearInterval(timeOut);
@@ -355,6 +350,20 @@ function stopDefault() {
   for (var i = 0; i < stopShow.length; i++) {
     stopShow[i].style.display = "inline";
   }
+}
+function stopWin() {
+  totalWins++;
+  document.getElementById("winSound").play();
+  document.getElementById("winVal").innerHTML = totalWins;
+  document.getElementById("lostGame").classList.add("hidden");
+  document.getElementById("wonGame").classList.remove("hidden");
+}
+function stopLose() {
+  if (mistakes == mistakesMade) {
+      document.getElementById("loseSound").play();
+    }
+    document.getElementById("wonGame").classList.add("hidden");
+    document.getElementById("lostGame").classList.remove("hidden");
 }
 function lightButton(btn) {
   document.getElementById("btn" + btn).classList.add("lit");
