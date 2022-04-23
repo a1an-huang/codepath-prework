@@ -348,6 +348,24 @@ h1 {
   opacity: 75%;
 }
 
+/* ---- Difficulty Text ---- */
+#diffText {
+  position:absolute;
+  top: 40%;
+  right:20%;
+}
+#easyDesc{
+  display:hidden;
+}
+#midDesc{
+  display:hidden;
+}
+#hardDesc{
+  display:hidden;
+}
+#custDesc{
+  display:hidden;
+}
 /* ---- Select Button ---- */
 #cScore {
   background: none;
