@@ -6,6 +6,8 @@ Submitted by: **Alan Huang**
 
 Time spent: **60** hours spent in total
 
+Project Live Link : (https://juvenile-polar-tumble.glitch.me/)
+
 Link to project: (https://glitch.com/edit/#!/juvenile-polar-tumble) :heart_eyes_cat:
 
 ## Required Functionality
