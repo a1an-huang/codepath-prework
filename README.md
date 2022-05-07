@@ -4,11 +4,9 @@
 
 Submitted by: **Alan Huang**
 
-Time spent: **60** hours spent in total
-
 Project Live Link : (https://juvenile-polar-tumble.glitch.me/)
 
-Link to project: (https://glitch.com/edit/#!/juvenile-polar-tumble) :heart_eyes_cat:
+Link to project: (https://glitch.com/edit/#!/juvenile-polar-tumble) 
 
 ## Required Functionality
 
@@ -35,23 +33,23 @@ The following **optional** features are implemented:
 
 The following **additional** features are implemented:
 
-- [x] Cat Theme :cat:
-- [x] Organized Code :notebook_with_decorative_cover:
-- [x] Home Page with Demo Video :house:
-- [x] Link to Github repo Onpage :cat2:
-- [x] Counter for Mistakes, Progress, and Timer :hourglass_flowing_sand:
-- [x] Previous Score & Total Wins :100:
-- [x] Menu with 3 different Difficulty Modes (Easy, Medium, Hard) :8ball:
-- [x] Speed Mode (One Life, 1 Round with 6 Patterns) :fast_forward:
-- [x] Legacy Mode (Original Game Mode) :old_key:
-- [x] Custom Mode ( User gets to choose Score, Pattern size, Mistakes, Timer and Speed) :customs:
-- [x] Custom Sounds for Winning and Losing :musical_keyboard: 
+- [x] Cat Theme
+- [x] Organized Code 
+- [x] Home Page with Demo Video 
+- [x] Link to Github repo Onpage 
+- [x] Counter for Mistakes, Progress, and Timer 
+- [x] Previous Score & Total Wins
+- [x] Menu with 3 different Difficulty Modes (Easy, Medium, Hard) 
+- [x] Speed Mode (One Life, 1 Round with 6 Patterns) 
+- [x] Legacy Mode (Original Game Mode) 
+- [x] Custom Mode ( User gets to choose Score, Pattern size, Mistakes, Timer and Speed) 
+- [x] Custom Sounds for Winning and Losing 
 
 ## Video Walkthrough (GIF)
 
 If you recorded multiple GIFs for all the implemented features, you can add them here:
 
-    Cat Edition! Landing Page, Demo Video (Please Pause Video Before Clicking Start),
+    Landing Page, Demo Video (Please Pause Video Before Clicking Start),
     Game Menu with 3 Difficulties, Speed Mode & Custom Mode.
 
 ![](https://i.imgur.com/hBR2MXA.gif)
